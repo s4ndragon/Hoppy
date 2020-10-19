@@ -1,0 +1,449 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*logo & nav*/
+header {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    min-width: 1300px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+div.nav_container {
+    /* border: 1px solid green; */
+    display: flex;
+    width: 95%;
+    height: 70px;
+    position: relative;
+    background-color: #fff;
+}
+
+div.logo {
+    /* border: 1px solid black; */
+    display: flex;
+    font-size: 28px;
+    /* -webkit-text-stroke: 3px white; */
+    font-size: 24px;
+    position: relative;
+    width: 35%;
+    height: 70px;
+    background-color: transparent;
+    /* justify-content: center; */
+    align-items: flex-end;
+}
+
+div.logo > a > img {
+    /* border: 1px solid red; */
+    width: 200px;
+}
+
+nav.nav {
+    /* border: 1px solid rgb(218, 213, 213); */
+    display: flex;
+    width: 65%;
+    min-width: 60%;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    background-color: transparent;
+    top: 0;
+    justify-content: space-around;
+}
+
+ul.nav_bar {
+    /* border: 1px solid springgreen; */
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70px;
+    /* top: 35px; */
+    /* left: 20px; */
+    background-color: transparent;
+}
+
+ul.nav_bar > li {
+    /* border: 1px solid indigo; */
+    /* display: flex; */
+    font-family: "Baloo Tamma 2", cursive;
+    font-size: 32px;
+    font-weight: 700;
+    height: 40px;
+    /* width: 20%; */
+    background-color: transparent;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #22201f;
+}
+
+.nav_bar > li > a {
+    /* border: 1px solid crimson; */
+    text-decoration: none;
+    /* color: #22201f; */
+    color: #22201f;
+    font-family: "Baloo Tamma 2", cursive;
+    font-size: 32px;
+    font-weight: 700;
+    /* -webkit-text-stroke: 3px white; */
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+}
+
+li > a.taproom {
+    color: #60a41d;
+}
+
+li.visit_container {
+    /* border: 1px solid brown; */
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 100px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+div.visit {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+li.visit_container:hover ul.visit_submenu {
+    display: block;
+}
+
+/*UIKIT*/
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background-color: transparent;
+}
+* + .uk-margin {
+    margin: 0 !important;
+}
+a:hover {
+    color: #60a41d;
+    text-decoration: none;
+}
+.uk-link,
+a {
+    color: #22201f;
+}
+
+/*main*/
+main {
+    width: 100%;
+    min-width: 1300px;
+}
+div.taproom_container {
+    width: 100%;
+    min-width: 1200px;
+    height: fit-content;
+    /* border: 1px solid rgb(192, 115, 192); */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+div.taproom_title_container {
+    display: flex;
+    width: 95%;
+    /* border: 1px solid palegreen; */
+    top: 30px;
+    position: relative;
+}
+div.taproom_title {
+    /* border: 1px solid slateblue; */
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    /* position: fixed; */
+    /* z-index: 90; */
+}
+
+div.taproom_title > h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 48px;
+}
+
+div.taproom_pic_container {
+    /* border: 1px solid palegreen; */
+    display: flex;
+    width: 100%;
+    min-width: 1200px;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
+    position: relative;
+    /* justify-self: center; */
+    /* align-self: center; */
+    top: 30px;
+    /* height: 600px; */
+    margin: 0;
+    padding: 0;
+    /* width: 95%; */
+}
+.slick-prev:before,
+.slick-next:before {
+    color: #60a41d;
+}
+
+div.taproom_pics {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+}
+div.taproom_pic_1 {
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
+div.taproom_pic_1 > img {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.slick-track {
+    margin: 0;
+}
+
+div.taproom_content_container {
+    /* border: 1px solid blue; */
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: #60a41d;
+}
+div.taproom_content {
+    /* border: 1px solid green; */
+    width: 95%;
+}
+div.taproom_content_title,
+div.taproom_content_p {
+    /* border: 1px solid red; */
+}
+
+div.taproom_content_title > h3 {
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 48px;
+    color: #22201f;
+}
+div.taproom_content_p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #22201f;
+}
+
+div.taproom_info_container {
+    /* border: 1px solid green; */
+    width: 100%;
+    min-width: 1200px;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #60a41d;
+}
+div.taproom_info {
+    /* border: 1px solid hotpink; */
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+div.taproom_info_add {
+    /* border: 1px solid blue; */
+    align-content: center;
+    margin: 0 10px 20px 0;
+    width: 700px;
+    /* min-width: 700px; */
+    height: 400px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.taproom_info_add > h4 {
+    /* border: 1px solid red; */
+    display: flex;
+    /* width: 350px; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    /* width: 100%; */
+}
+div.taproom_info_add > p {
+    /* border: 1px solid red; */
+    display: flex;
+    /* width: 350px; */
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 0 10px;
+    width: 100%;
+    /* min-width: 1200px; */
+}
+div.taproom_info_map {
+    width: 700px;
+    height: 400px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 10px;
+}
+
+/*footer*/
+footer {
+    /* border: 1px solid blue; */
+    background-color: #22201f;
+    width: 100%;
+    min-width: 1300px;
+    display: flex;
+    position: relative;
+    height: 400px;
+    top: 250px;
+    z-index: 1;
+    color: white;
+    display: flex;
+}
+
+div.footer_openhour_container {
+    /* border: 1px solid greenyellow; */
+    width: 33%;
+}
+
+div.openhour_title {
+    /* border: 1px solid turquoise; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+div.openhour_title > h6 {
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+div.openhour {
+    /* border: 1px solid pink; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 50%;
+}
+
+div.openhour {
+    align-content: center;
+}
+
+div.footer_middle {
+    /* border: 1px solid orangered; */
+    width: 34%;
+}
+
+div.footer_slogan_container {
+    /* border: 1px solid rgb(30, 27, 212); */
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    display: flex;
+}
+
+div.footer_slogan_container > h4 {
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 50px;
+}
+
+div.footer_media_container {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: flex-end;
+    vertical-align: text-bottom;
+    height: auto;
+}
+
+div.fb_icon,
+div.twi_icon,
+div.ig_icon,
+div.yt_icon,
+div.pin_icon {
+    /* border: 1px solid wheat; */
+    height: auto;
+    width: auto;
+}
+
+div.fb_icon > img,
+div.twi_icon > img,
+div.ig_icon > img,
+div.yt_icon > img,
+div.pin_icon > img {
+    align-items: flex-end;
+}
+
+div.footer_bac_container {
+    /* border: 1px solid paleturquoise; */
+    width: 33%;
+    height: 80%;
+    display: flex;
+    align-self: center;
+}
+
+div.footer_bac_pic {
+    /* border: 1px solid green; */
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+div.footer_bac_pic > img {
+    /* border: 1px solid paleturquoise; */
+    width: 40%;
+}

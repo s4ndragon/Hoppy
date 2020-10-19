@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*logo & nav*/
+header {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    min-width: 1300px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+div.nav_container {
+    /* border: 1px solid green; */
+    display: flex;
+    width: 95%;
+    height: 70px;
+    position: relative;
+    background-color: #fff;
+}
+
+div.logo {
+    /* border: 1px solid black; */
+    display: flex;
+    font-size: 28px;
+    /* -webkit-text-stroke: 3px white; */
+    font-size: 24px;
+    position: relative;
+    width: 35%;
+    height: 70px;
+    background-color: transparent;
+    /* justify-content: center; */
+    align-items: flex-end;
+}
+
+div.nav_container > div.logo > a > img {
+    /* border: 1px solid red; */
+    width: 200px !important;
+}
+
+img.logo {
+    width: 200px !important;
+}
+
+nav.nav {
+    /* border: 1px solid black; */
+    display: flex;
+    width: 65%;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    background-color: transparent;
+    top: 0;
+}
+
+nav.nav > .nav_bar {
+    /* border: 1px solid springgreen; */
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70px;
+    /* top: 35px; */
+    /* left: 20px; */
+    background-color: transparent;
+}
+
+.nav_bar > li {
+    /* border: 1px solid indigo; */
+    /* display: flex; */
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 32px;
+    height: 40px;
+    width: auto;
+    background-color: transparent;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    vertical-align: text-bottom;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar > li > a {
+    text-decoration: none;
+    /* color: #22201f; */
+    color: #22201f;
+    /* -webkit-text-stroke: 3px white; */
+    text-align: center;
+    background-color: transparent;
+}
+
+.nav_bar > li > a.beers {
+    color: #60a41d;
+}
+
+a:hover {
+    color: #60a41d;
+    text-decoration: none;
+}
+
+.uk-link,
+a {
+    color: #22201f;
+}
+
+/*main*/
+section.product {
+    /* border: 1px solid black; */
+    position: relative;
+    width: 100%;
+    min-width: 1300px;
+    height: 650px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+div.product_container {
+    /* border: 1px solid salmon; */
+    width: 95%;
+    /* height: 100%; */
+    display: flex;
+}
+
+div.product_content {
+    /* border: 1px solid teal; */
+    width: 55%;
+    font-family: "Baloo Tamma 2", cursive;
+    color: #22201f;
+    font-weight: 900;
+    position: relative;
+    /* top: 100px; */
+}
+
+div.product_title {
+    /* border: 1px solid blue; */
+    height: 30%;
+    /* width: 50%; */
+}
+
+div.pri_title {
+    /* border: 1px solid green; */
+    display: flex;
+}
+div.pri_title > h2 {
+    /* border: 1px solid darkgoldenrod; */
+    /* font-family: "Baloo Tamma 2", cursive; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    color: #60a41d;
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+    /* position: relative; */
+}
+
+div.sub_title {
+    /* border: 1px solid red; */
+    display: flex;
+}
+div.sub_title > p {
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 800;
+    font-size: 24px;
+    position: relative;
+    margin-left: 3px;
+}
+
+div.product_describtion {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 3px;
+    height: 70%;
+}
+
+div.product_info {
+    /* border: 1px solid darkblue; */
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+div.product_style {
+    /* border: 1px solid orange; */
+    width: 50%;
+    display: flex;
+    align-content: flex-end;
+}
+div.product_style > p {
+    /* border: 1px solid orange; */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+div.product_abv {
+    /* border: 1px solid paleturquoise; */
+    width: 50%;
+    display: flex;
+}
+div.product_abv > p {
+    /* border: 1px solid paleturquoise; */
+    font-family: "Montserrat", sans-serif;
+    color: #60a41d;
+    font-weight: 600;
+    font-size: 32px;
+    display: flex;
+}
+
+div.product_detail {
+    /* border: 1px solid yellowgreen; */
+    width: fit-content;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin: 10px 10px 0 0;
+    height: 40%;
+}
+div.product_detail > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+div.beer_btn {
+    align-self: flex-start;
+    justify-self: end;
+    /* border: 1px solid #60a41d; */
+}
+
+div.beer_btn > input {
+    border: 0;
+    background-color: #60a41d;
+    color: #ffffff;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+div.product_pic {
+    /* border: 1px solid black; */
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    /* align-self: flex-end; */
+}
+
+div.product_pic > img {
+    width: 600px;
+    height: 650px;
+}
+
+/*footer*/
+footer {
+    /* border: 1px solid blue; */
+    background-color: #22201f;
+    width: 100%;
+    min-width: 1300px;
+    display: flex;
+    position: relative;
+    height: 400px;
+    top: 100px;
+    z-index: 1;
+    color: white;
+    display: flex;
+}
+
+div.footer_openhour_container {
+    /* border: 1px solid greenyellow; */
+    width: 33%;
+}
+
+div.openhour_title {
+    /* border: 1px solid turquoise; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+div.openhour_title > h6 {
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+div.openhour {
+    /* border: 1px solid pink; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 50%;
+}
+
+div.openhour {
+    align-content: center;
+}
+
+div.footer_middle {
+    /* border: 1px solid orangered; */
+    width: 34%;
+}
+
+div.footer_slogan_container {
+    /* border: 1px solid rgb(30, 27, 212); */
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    display: flex;
+}
+
+div.footer_slogan_container > h4 {
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 50px;
+}
+
+div.footer_media_container {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: flex-end;
+    vertical-align: text-bottom;
+    height: auto;
+}
+
+div.fb_icon,
+div.twi_icon,
+div.ig_icon,
+div.yt_icon,
+div.pin_icon {
+    /* border: 1px solid wheat; */
+    height: auto;
+    width: auto;
+}
+
+div.fb_icon > img,
+div.twi_icon > img,
+div.ig_icon > img,
+div.yt_icon > img,
+div.pin_icon > img {
+    align-items: flex-end;
+}
+
+div.footer_bac_container {
+    /* border: 1px solid paleturquoise; */
+    width: 33%;
+    height: 80%;
+    display: flex;
+    align-self: center;
+}
+
+div.footer_bac_pic {
+    /* border: 1px solid green; */
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+div.footer_bac_pic > img {
+    /* border: 1px solid paleturquoise; */
+    width: 40%;
+    /* height: fit-content; */
+}

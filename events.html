@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="./vender/uikit-3/css/uikit.min.css">
+    <link rel="stylesheet" href="./vender/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./vender/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./vender/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vender/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./CSS/events.css">
+</head>
+<body>
+    <header>
+        <div class="nav_container">
+            <div class="logo">  
+                <a href="./index.html"><img src="./images/LOGO.png"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav_bar">
+                    <li>
+                        <a class="beers" href="./beer.html">BEERS</a>
+                    </li>
+                    <li>
+                        <a class="taproom" href="./taproom.html">TAPROOM</a>
+                    </li>
+                    <li>
+                        <a class="brewery" href="./brewery.html">BREWERY</a>
+                    </li>
+                    <li>
+                        <a class="about" href="./about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="events" href="./events.html">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="shop" href="#" target="_blank">SHOP</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <nav class="nav">
+                <ul class="nav_bar">
+                    <li>
+                        <a class="beers" href="#" target="_blank">BEERS</a>
+                    </li>
+                    <li class="visit_container">
+                        <div class="visit">
+                            VISIT
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <div class="visit_submenu_container">
+                            <ul class="visit_submenu">
+                                <li class="visit_taproom">
+                                        <a href="#">TAPROOM</a>
+                                </li>
+                                <li class="visit_brewery">
+                                    <a href="#">BREWERY</a>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                    </li>
+                    <li>
+                        <a class="about" href="#" target="_blank">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="events" href="#" target="_blank">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="shop" href="#" target="_blank">SHOP</a>
+                    </li>
+                </ul>
+            </nav> -->
+        </div>
+    </header>
+
+
+    <main> 
+        <form>
+            <div class="book_event_container">
+                <div class="book_title">
+                    <h3>EVENTS</h3>
+                </div>
+                <div class="book_content">
+                    <div class="book_content_title">
+                        <!-- <h3>HOST YOUR EVENT AT HOOPY</h3> -->
+                    </div>
+                    <div class="book_p">
+                        <p>Hoppy offers a unique opportunity for private events for small and large groups, fundraisers, public and private parties. Whatever your dream event includes, we’re here to help make it happen.</p>
+                        <p>Fill out our private events form to get started.</p>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="name_title">
+                            <label class="first_name" for="first-name">First Name</label>
+                            <label class="last_name" for="last-name">Last Name</label>                    
+                    </div>
+                    <div class="name_input">
+                        <input class="first_name" type="text" id="first-name">
+                        <input class="last_name" type="text" id="last-name">
+                    </div>
+                    
+                    <div class="contact_info">
+                        <label class="email" for="email">EMAIL</label>
+                        <label class="phone" for="phone">PHONE</label>                    
+                    </div>
+                    <div class="contact_info_input">
+                        <input class="email" type="text" id="email">
+                        <input class="phone" type="tel" id="phone">
+                    </div>
+                    <div class="requested_date">
+                        <label class="date_title" for="date">REQUESTED DATE</label>
+                        <input class="date" type="date" id="date" >
+                    </div>
+                    <div class="requested_time">
+                        <label class="time">REQUESTED TIME</label>
+                        <select class="time" name="request_time">
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                    </div>
+                    <div class="guest">
+                        <label class="numbers_guest" for="guest">ESTIMATED NUMBER OF GUESTS</label>
+                        <input class="guest" type="text" id="guest">
+                    </div>
+                    <div class="info">
+                        <label class="info" for="info">ADDITIONAL INFORMATION</label>
+                        <textarea class="info" type="text" id="info"></textarea>
+                    </div>
+                    <div class="submit_btn">
+                    <button type="submit">SUBMIT REQUEST</button>
+                </div>
+                </div>
+            </div>
+        </form>
+        <!-- <form>
+            <fieldset class="uk-fieldset">
+        
+                <legend class="uk-legend">Legend</legend>
+        
+                <div class="uk-margin">
+                    <input class="uk-input" type="text" placeholder="Input">
+                    <input class="uk-input" type="text" placeholder="Input">
+
+                </div>
+        
+                <div class="uk-margin">
+                    <select class="uk-select">
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                    </select>
+                </div>
+        
+                <div class="uk-margin">
+                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                </div>
+                <div class="submit"></div>
+            </fieldset>
+        </form> -->
+    </div>
+</main>
+
+
+
+
+
+<footer>
+    <div class="footer_openhour_container">
+        <div class="openhour_title">
+            <h6>OPEN HOUR</h6>
+        </div>
+        <div class="openhour">                    
+                <div class="openhour_date">
+                    <div class="date" id="mon_date">Monday</div>
+                    <div class="date" id="tue_date">Tuesday</div>
+                    <div class="date" id="wed_date">Wednesday</div>
+                    <div class="date" id="thu_date">Thursday</div>
+                    <div class="date" id="fri_date">Friday</div>
+                    <div class="date" id="sat_date">Saturday</div>
+                    <div class="date" id="sun_date">Sunday</div>
+                </div>
+                <div class="openhour_time">
+                    <div class="time" id="mon_time">14:00 - 22:00</div>
+                    <div class="time" id="mon_time">14:00 - 22:00</div>
+                    <div class="time" id="mon_time">14:00 - 22:00</div>
+                    <div class="time" id="mon_time">14:00 - 22:00</div>
+                    <div class="time" id="mon_time">14:00 - 22:00</div>
+                    <div class="time" id="sat_time">12:00 - 22:00</div>
+                    <div class="time" id="sat_time">12:00 - 22:00</div>
+                </div>                  
+        </div>
+    </div>
+    <div class="footer_middle">
+        <div class="footer_slogan_container">
+        <h4>DONT WORRY<br />BE HOPPY</h4>
+    </div>
+        <div class="footer_media_container">
+            <div class="fb_icon">
+                <a class="fb_link" href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook-f fa-2x" style="color: white;"></i>
+                </a>
+            </div>
+            <div class="twi_icon">
+                <a class="twi_link" href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter fa-2x" style="color: white;"></i>
+                </a>
+            </div>
+            <div class="ig_icon">
+                <a class="ig_link" href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram fa-2x" style="color: white;"></i>
+                </a>
+            </div>
+            <div class="yt_icon">
+                <a class="yt_link" href="https://youtube.com/" target="_blank">
+                    <i class="fab fa-youtube fa-2x" style="color: white;"></i>
+                </a>
+            </div>
+            <div class="pin_icon">
+                <a class="pin_link" href="https://www.pinterest.com/" target="_blank">
+                    <i class="fab fa-pinterest-p fa-2x" style="color: white;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer_bac_container">
+    <div class="footer_bac_pic">
+        <img src="./images/footer/bac_transparent.png" />
+    </div>
+</div>
+</footer>
+<script type="text/javascript" src="./vender/uikit-3/js/uikit.min.js"></script>
+<script type="text/javascript" src="./vendors/uikit-3/js/uikit-icons.min.js"></script>
+<script type="text/javascript" src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="./vender/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./vender/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+</body>
+</html>

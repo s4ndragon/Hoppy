@@ -1,0 +1,831 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #60a41dd5;
+    /* background-image: url(/images/index/Hoptimum-Bottle.png); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 1300px;
+}
+/*logo & nav*/
+header {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    min-width: 1300px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+div.nav_container {
+    /* border: 1px solid green; */
+    display: flex;
+    width: 90%;
+    height: 70px;
+    position: relative;
+    background-color: #fff;
+}
+
+div.logo {
+    /* border: 1px solid black; */
+    display: flex;
+    font-size: 28px;
+    /* -webkit-text-stroke: 3px white; */
+    font-size: 24px;
+    position: relative;
+    width: 35%;
+    height: 70px;
+    background-color: transparent;
+    /* justify-content: center; */
+    align-items: flex-end;
+}
+
+div.logo > a > img {
+    /* border: 1px solid red; */
+    width: 200px;
+}
+
+nav.nav {
+    /* border: 1px solid black; */
+    display: flex;
+    width: 65%;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    background-color: transparent;
+    top: 0;
+}
+
+ul.nav_bar {
+    /* border: 1px solid springgreen; */
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70px;
+    /* top: 35px; */
+    /* left: 20px; */
+    background-color: transparent;
+}
+
+.nav_bar > li {
+    /* border: 1px solid indigo; */
+    /* display: flex; */
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 32px;
+    height: 40px;
+    width: auto;
+    background-color: transparent;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    vertical-align: text-bottom;
+}
+
+.nav_bar > li > a {
+    text-decoration: none;
+    /* color: #22201f; */
+    color: #22201f;
+    /* -webkit-text-stroke: 3px white; */
+    text-align: center;
+    background-color: transparent;
+}
+
+/*first*/
+
+section.promo {
+    width: 100%;
+    min-width: 1300px;
+    height: 780px;
+    background-color: transparent;
+}
+section > div.promo_container {
+    /* border: 1px solid white; */
+    width: 100%;
+    min-width: 1200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+}
+
+div.promo_pic > img {
+    /* border: 1px solid white; */
+    display: flex;
+    z-index: 1;
+    background-color: transparent;
+    height: 100vh;
+}
+
+div.promo_content {
+    display: flex;
+    position: absolute;
+    /* border: 1px solid tomato; */
+    /* top: 150px;
+    left: 370px; */
+    background-color: transparent;
+    z-index: 2;
+}
+
+section > div.promo_container > div.promo_content > h2.animate__fadeInUp {
+    animation-duration: 3s;
+}
+
+div.promo_content > h2 {
+    color: #fff;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 75px;
+    letter-spacing: 7px;
+    text-align: center;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    top: 50px;
+    /* justify-self: center;
+    align-self: center; */
+}
+
+/*secend products*/
+section.products {
+    /* border: 1px solid black; */
+    display: flex;
+    background: #fff;
+    position: relative;
+    width: 100%;
+    min-width: 1300px;
+    height: 840px;
+    z-index: 1;
+    font-size: 0;
+    justify-content: center;
+    align-content: center;
+}
+
+div.product_container {
+    /* border: 1px solid violet; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 85%;
+}
+/*hoptimum*/
+div.product_pic {
+    background-color: white;
+    width: 50%;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-self: center;
+}
+div.product_pic > img {
+    height: 650px;
+    width: 650px;
+    z-index: 3;
+    position: relative;
+    left: 50px;
+}
+
+div.product_content {
+    /* border: 1px solid black; */
+    position: relative;
+    /* background-color: white; */
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.product_container > div.product_content > h4 {
+    /* border: 1px solid tomato; */
+    /* background-color: white; */
+    /* display: inline-block; */
+    width: 100%;
+    height: auto;
+    color: #60a41d;
+    font-size: 88px;
+    line-height: 90px;
+    text-align: center;
+    /* vertical-align: center; */
+    position: absolute;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    /* top: 120px; */
+    /* left: 150px; */
+    /* height: 583px; */
+}
+
+/*third - onTap*/
+section.ontap {
+    /* border: 1px solid blue; */
+    background-color: #22201f;
+    width: 100%;
+    min-width: 1300px;
+    /* display: inline-block; */
+    position: relative;
+    height: 840px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+div.ontap_container {
+    /* border: 1px solid rgb(105, 105, 189); */
+    display: flex;
+    background: #22201f;
+    /* font-family: "Baloo Tammudu 2", cursive; */
+    position: relative;
+    width: 85%;
+    height: 85%;
+    top: 100px;
+    bottom: 0;
+    /* justify-content: center; */
+    align-items: flex-end;
+}
+
+div.ontap_title {
+    /* border: 1px solid tomato; */
+    align-self: flex-start;
+    left: 0;
+}
+
+div.ontap_title > h2 {
+    background: #22201f;
+    /* border: 1px solid orange; */
+    color: white;
+    font-size: 78px;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+}
+
+div.ontap_list {
+    /* border: 1px solid red; */
+    /* display: flex; */
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 75%;
+}
+
+div.ontap_names {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+div.ontap_name {
+    /* border: 1px solid white; */
+    /* background-color: #c2602f; */
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    width: 25%;
+    height: 60px;
+}
+
+div.ontap_details {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+div.p1 > a,
+div.p2 > a,
+div.p3 > a,
+div.p4 > a,
+div.p5 > a,
+div.p6 > a,
+div.p7 > a,
+div.p8 > a,
+div.p9 > a {
+    color: #fff;
+}
+
+div.hoptimum {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.people_power {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.dare_to_know {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.hop_bullet {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.imperial_stuout {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.dragonstooth {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.urban_lager {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.space_dust {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.relax {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.ontap_style {
+    /* border: 1px solid rgb(197, 111, 30); */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.123); */
+    /* background-color: #c2602f; */
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    height: 80px;
+}
+
+div.ontap_divide {
+    /* border: 1px solid rgb(32, 185, 78); */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.123); */
+    /* background-color: #c2602f; */
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    /* font-style: italic; */
+    height: 90px;
+}
+
+div.ontap_abv {
+    /* border: 1px solid rgb(118, 99, 221); */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.123); */
+    /* background-color: #c2602f; */
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    height: 110px;
+}
+
+/*four - taproom*/
+section.taproom {
+    /* border: 1px solid blue; */
+    background-color: white;
+    width: 100%;
+    min-width: 1300px;
+    /* display: inline-block; */
+    position: relative;
+    height: 650px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+div.taproom_container {
+    /* border: 1px solid red; */
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+div.taproom_content {
+    /* border: 1px solid turquoise; */
+    justify-content: space-between;
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.taproom_content > h4 {
+    /* border: 1px solid red; */
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 48px;
+    height: 30%;
+}
+
+div.taproom_content > p {
+    /* border: 1px solid black; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    height: 60%;
+}
+
+div.taproom_btn {
+    align-self: flex-start;
+    justify-self: end;
+    border: 1px solid #60a41d;
+}
+
+div.taproom_btn > input {
+    border: 0;
+    background-color: #60a41d;
+    color: #ffffff;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+}
+
+div.taproom_pic {
+    /* border: 1px solid rgb(214, 164, 25); */
+    width: 60%;
+    /* height: 100%; */
+}
+
+div.taproom_pic > img {
+    /* border: 1px solid rgb(8, 7, 4); */
+    width: 100%;
+    /* height: auto; */
+}
+
+/*fifth - brewery*/
+section.brewery {
+    /* border: 1px solid blue; */
+    background-color: white;
+    width: 100%;
+    min-width: 1300px;
+    /* display: inline-block; */
+    position: relative;
+    height: 650px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+div.brewery_container {
+    /* border: 1px solid blue; */
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.brewery_content {
+    /* border: 1px solid turquoise; */
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.brewery_content > h4 {
+    /* border: 1px solid orange; */
+    height: 30%;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+div.brewery_content > p {
+    /* border: 1px solid olivedrab; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    height: 60%;
+}
+
+div.brewery_btn {
+    align-self: flex-start;
+    justify-self: end;
+    border: 1px solid #60a41d;
+}
+
+div.brewery_btn > input {
+    border: 0;
+    background-color: #60a41d;
+    color: #ffffff;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+}
+
+div.brewery_pic {
+    /* border: 1px solid rgb(214, 164, 25); */
+    width: 60%;
+    /* padding-left: 25px; */
+    /* justify-self: flex-end; */
+}
+
+div.brewery_pic > img {
+    /* border: 1px solid rgb(16, 68, 71); */
+    width: 100%;
+    /* justify-self: flex-end; */
+}
+
+/*about*/
+section.about {
+    /* border: 1px solid blue; */
+    background-color: #22201f;
+    width: 100%;
+    min-width: 1300px;
+    /* display: inline-block; */
+    position: relative;
+    height: 840px;
+    z-index: 1;
+}
+
+div.about_container {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url("../images/index/hops.jpg") no-repeat center center;
+    background-size: cover;
+    /* position: relative; */
+    /* font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Baloo Tammudu 2", cursive;
+    line-height: 80px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
+}
+div.about_layer {
+    /* border: 1px solid rgb(42, 136, 54); */
+    background: rgba(124, 124, 124, 0.7);
+    width: 100%;
+    height: 100%;
+    /* font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Baloo Tammudu 2", cursive;
+    line-height: 80px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
+}
+
+div.about_wrap {
+    /* border: 1px solid tomato; */
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background: url("../images/index/hops.jpg") no-repeat center center;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+    -webkit-text-stroke: 3px #22201f5e;
+    text-align: center;
+    line-height: 120px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    /* top: 150px; */
+}
+
+div.about_wrap > a {
+    color: transparent;
+    text-decoration: none;
+}
+
+div.about_plus {
+    /* border: 1px solid #22201f; */
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 72px;
+    display: flex;
+    /* width: 360px;
+    height: 360px; */
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*shop*/
+section.shop {
+    /* border: 1px solid blue; */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-width: 1300px;
+    /* display: inline-block; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    z-index: 1;
+}
+
+div.shop_container {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    /* border: 1px solid orangered; */
+    display: flex;
+}
+
+div.shop_content {
+    position: relative;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+}
+
+div.shop_content > h4 {
+    /* border: 1px solid yellow; */
+    color: #60a41d;
+    font-size: 170px;
+    line-height: 170px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+}
+
+div.shop_pic {
+    position: absolute;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+div.shop_pic > img {
+    /* border: 1px solid purple; */
+    position: relative;
+    width: 25%;
+    height: auto;
+}
+
+/*footer*/
+footer {
+    /* border: 1px solid blue; */
+    background-color: #22201f;
+    width: 100%;
+    min-width: 1300px;
+    display: flex;
+    position: relative;
+    height: 400px;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+div.footer_openhour_container {
+    /* border: 1px solid greenyellow; */
+    width: 33%;
+}
+
+div.openhour_title {
+    /* border: 1px solid turquoise; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+div.openhour_title > h6 {
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+div.openhour {
+    /* border: 1px solid pink; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 50%;
+}
+
+div.openhour {
+    align-content: center;
+}
+
+div.footer_middle {
+    /* border: 1px solid orangered; */
+    width: 34%;
+}
+
+div.footer_slogan_container {
+    /* border: 1px solid rgb(30, 27, 212); */
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    display: flex;
+}
+
+div.footer_slogan_container > h4 {
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 48px;
+    line-height: 50px;
+}
+
+div.footer_media_container {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: flex-end;
+    vertical-align: text-bottom;
+    height: auto;
+}
+
+div.fb_icon,
+div.twi_icon,
+div.ig_icon,
+div.yt_icon,
+div.pin_icon {
+    /* border: 1px solid wheat; */
+    height: auto;
+    width: auto;
+}
+
+div.fb_icon > img,
+div.twi_icon > img,
+div.ig_icon > img,
+div.yt_icon > img,
+div.pin_icon > img {
+    align-items: flex-end;
+}
+
+div.footer_bac_container {
+    /* border: 1px solid paleturquoise; */
+    width: 33%;
+    height: 80%;
+    display: flex;
+    align-self: center;
+}
+
+div.footer_bac_pic {
+    /* border: 1px solid green; */
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+div.footer_bac_pic > img {
+    /* border: 1px solid paleturquoise; */
+    width: 40%;
+}
