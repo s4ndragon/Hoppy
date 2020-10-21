@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet" href="./vender/uikit-3/css/uikit.min.css">
     <script src="./vender/uikit-3/js/uikit.min.js"></script>
+    <link href="./vender/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
     <script src="./vendors/uikit-3/js/uikit-icons.min.js"></script>
     <script src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/about.css">
@@ -38,7 +39,36 @@
                         <a class="shop" href="#" target="_blank">SHOP</a>
                     </li>
                 </ul>
+                <button class="hamburger hamburger--spring" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
             </nav>
+            <!-- <button class="hamburger_icon">hi</button> -->
+            <div class="hamburger"> 
+                <ul class="nav_bar">
+                    <li>
+                        <a class="beers" href="./beer.html">BEERS</a>
+                    </li>
+                    <li>
+                        <a class="taproom" href="./taproom.html">TAPROOM</a>
+                    </li>
+                    <li>
+                        <a class="brewery" href="./brewery.html">BREWERY</a>
+                    </li>
+                    <li>
+                        <a class="about" href="./about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="events" href="./events.html">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="shop" href="#" target="_blank">SHOP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <!-- <div class="about_container">
@@ -48,6 +78,7 @@
             </div>
         </div>
     </div> -->
+    
     <div class="banner_container">
         <div class="banner_title">
             <h3>ABOUT US</h3>
@@ -97,11 +128,11 @@
                     <h3>We meet so many awesome human-beings and cuties. <br>
                         Here we are, as a family.</h3>
                 </div>
-                <div class="about_story_more_content">
+                <!-- <div class="about_story_more_content">
                     <p>
 
                     </p>
-                </div>
+                </div> -->
                 <div class="about_story_more_pics" uk-scrollspy="target: > img; cls: uk-animation-fade; delay: 500; repeat: true">
                     <img src="./images/about/staff_2.jpg">
                     <img src="./images/about/staff_4.jpg">
@@ -180,5 +211,13 @@
         </div>
     </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var $hamburger = $(".hamburger");
+        $hamburger.on("click", function(e) {
+          $hamburger.toggleClass("is-active");
+          // Do something else, like open/close menu
+        });
+      </script>
 </body>
 </html>
