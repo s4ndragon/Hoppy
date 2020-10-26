@@ -38,6 +38,8 @@
     footer {
         display: flex;
         flex-direction: row;
+        width: 100%;
+        height: 400px;
     }
     div.footer_openhour_container {
         display: flex;
@@ -55,9 +57,10 @@
     }
     div.footer_bac_container {
         width: 34%;
+        height: 400px;
     }
     div.footer_bac_pic > img {
-        width: 50%;
+        width: 100%;
         height: auto;
     }
 }
@@ -92,6 +95,8 @@
     footer {
         display: flex;
         flex-direction: row;
+        width: 100%;
+        height: 400px;
     }
     div.footer_openhour_container {
         display: flex;
@@ -109,9 +114,10 @@
     }
     div.footer_bac_container {
         width: 34%;
+        height: 400px;
     }
     div.footer_bac_pic > img {
-        width: 50%;
+        width: 100%;
         height: auto;
     }
 }
@@ -150,6 +156,7 @@
     footer {
         display: flex;
         flex-direction: row;
+        height: 400px;
         width: 100%;
     }
     div.footer_openhour_container {
@@ -169,10 +176,10 @@
     }
     div.footer_bac_container {
         width: 34%;
+        height: 300px;
     }
     div.footer_bac_pic > img {
         width: 50%;
-        height: auto;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -210,28 +217,32 @@
     }
     footer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        /* height: 400px; */
+        align-items: center;
     }
     div.footer_openhour_container {
-        display: flex;
-        flex-direction: column;
-        width: 34%;
+        width: 70%;
+        padding: 10px;
     }
     div.openhour_title {
-        height: 35%;
+        height: 45%;
     }
     div.openhour {
-        height: 65%;
+        height: 55%;
     }
     div.footer_middle {
-        width: 33%;
+        width: 70%;
+        padding: 10px;
     }
     div.footer_bac_container {
-        width: 34%;
+        width: 350px;
+        height: 300px;
     }
     div.footer_bac_pic > img {
-        width: 50%;
-        height: auto;
+        padding: 10px;
+        width: 200px;
+        height: 300px;
     }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -270,9 +281,12 @@
     footer {
         display: flex;
         flex-direction: column;
+        /* height: 400px; */
+        width: 100%;
+        align-items: center;
     }
     div.footer_openhour_container {
-        width: 100%;
+        width: 70%;
         padding: 10px;
     }
     div.openhour_title {
@@ -282,14 +296,17 @@
         height: 55%;
     }
     div.footer_middle {
-        width: 100%;
+        width: 70%;
         padding: 10px;
     }
     div.footer_bac_container {
-        width: 50%;
+        width: 350px;
+        height: 300px;
     }
     div.footer_bac_pic > img {
         padding: 10px;
+        width: 200px;
+        height: 300px;
     }
 }
 @media screen and (max-width: 575px) {
@@ -329,20 +346,26 @@
     footer {
         display: flex;
         flex-direction: column;
+        /* height: 1000px; */
+        align-items: center;
     }
     div.footer_openhour_container {
-        width: 100%;
+        width: 70%;
+        height: 40%;
         padding: 10px;
     }
     div.footer_middle {
-        width: 100%;
+        width: 70%;
         padding: 10px;
     }
     div.footer_bac_container {
-        width: 50%;
+        width: 350px;
+        height: 300px;
     }
     div.footer_bac_pic > img {
         padding: 10px;
+        width: 200px;
+        height: 300px;
     }
 }
 /*logo & nav*/
@@ -537,7 +560,7 @@ div.banner_container {
     height: 790px;
     background-image: url(../images/about/header.jpg);
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
 
@@ -657,14 +680,14 @@ div.about_story_pic_container {
 }
 
 div.about_story_pic {
-    /* border: 1px solid greenyellow; */
+    border: 1px solid greenyellow;
     width: 95%;
     display: flex;
     justify-content: space-around;
 }
 div.about_story_pic_left,
 div.about_story_pic_right {
-    /* border: 1px solid hotpink; */
+    border: 1px solid hotpink;
     width: 300px;
     height: 300px;
 }
@@ -742,6 +765,7 @@ a:hover {
 a {
     color: #22201f;
 }
+
 /*footer*/
 footer {
     border: 1px solid blue;
@@ -786,7 +810,7 @@ div.openhour_title > h6 {
 div.openhour {
     border: 1px solid pink;
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
