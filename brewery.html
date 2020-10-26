@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./vender/uikit-3/css/uikit.min.css">
     <link rel="stylesheet" href="./vender/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./vender/slick-1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="./vender/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./vender/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link href="./vender/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./vender/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="./vender/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"> -->
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="./CSS/brewery.css">
 </head>
 <body>
@@ -40,7 +41,36 @@
                         <a class="shop" href="#" target="_blank">SHOP</a>
                     </li>
                 </ul>
+                <button class="hamburger hamburger--spring" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
             </nav>
+            <!-- <button class="hamburger_icon">hi</button> -->
+            <div class="hamburger"> 
+                <ul class="nav_bar">
+                    <li>
+                        <a class="beers" href="./beer.html">BEERS</a>
+                    </li>
+                    <li>
+                        <a class="taproom" href="./taproom.html">TAPROOM</a>
+                    </li>
+                    <li>
+                        <a class="brewery" href="./brewery.html">BREWERY</a>
+                    </li>
+                    <li>
+                        <a class="about" href="./about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="events" href="./events.html">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="shop" href="#" target="_blank">SHOP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
 
@@ -53,10 +83,10 @@
             </div>
             <div class="brewery_qs_container">
                 <div class="brewery_qs_title"></div>
-                    <div class="brewery_qs1" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <div class="brewery_qs1" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                         <h3>The brewhouse: where our beers come to life.</h3>
                     </div>
-                    <div class="brewery_qs2" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <div class="brewery_qs2" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                         <h3>The tour will show you how we make it!</h3>
                     </div>
                 </div>
@@ -71,13 +101,13 @@
                     <div class="brewery_pic_1">
                         <img src="./images/brewery/brewery_18.jpg">
                     </div>
-                    <div class="brewery_content_1"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <div class="brewery_content_1"  uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                         <h3>MALTING</h3>
                         <p>Malting is the process in which raw barley or another grain is made ready to become the main ingredient in the brewing process. The grain is steeped in water, then rested under precise conditions to encourage germination, and finally dried in a kiln and/or a roaster.</p>
                     </div>
                 </div>
                 <div class="brewery_tour_2">
-                    <div class="brewery_content_2" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <div class="brewery_content_2" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                         <h3 >MASHING</h3>
                         <p>Mashing is the process of combining a mix of grains – typically malted barley with supplementary grains such as corn, sorghum, rye, or wheat – known as the "grain bill" with water and then heating the mixture. </p>
                     </div>
@@ -89,13 +119,13 @@
                     <div class="brewery_pic_3">
                         <img src="./images/brewery/brewery_10.jpg">
                     </div>
-                    <div class="brewery_content_3" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                    <div class="brewery_content_3" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                         <h3>FERMENTATION</h3>
                         <p>Fermentation is the process whereby “sugars” are converted by yeast to alcohol, carbon dioxide, and heat. In the brewing of most traditional beer, the sugars are derived mainly from malted barley, although other cereal sources and other plant sugars can also be used. These materials also contribute proteinaceous substances, which in concert with the sugars and added flavoring agents, notably hops, generate the alcohol, flavors, and aromas that we know and love as beer. </p>
                     </div>
                 </div>
                 <div class="brewery_tour_4">
-                    <div class="brewery_content_4" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                    <div class="brewery_content_4" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                         <h3>BOTTLING</h3>
                         <p>Whether brand new or recycled, the bottles are then fed into the filler, a large rotary device connecting the bottles to the bowl containing the beer ready for filling. But before beer is filled into the bottles, the air is sucked out of them to remove the harmful oxygen. This may happen either once or twice—single or double pre-evacuation—which is always followed by a pre-pressurisation with pure CO2 that serves to both provide a “beer friendly” atmosphere in the bottles and aligns the pressure in the bottle with the one in the tank, making sure that the subsequent filling can take place without the beer foaming. When the bottles are full, they enter the rotary capper where caps/crown corks are applied to the bottle mouths and squeezed tightly onto them.</p>
                     </div>
@@ -105,15 +135,16 @@
                 </div>
             </div>
 
-            <h2 id="title">Pricing table - with hover effect </h2> 
+            <!-- <h2 id="title">Pricing table - with hover effect </h2>  -->
             <div class="hover-table-layout">
                 <div class="listing-item">
                     <figure class="image">
                         <img src="./images/brewery/brewery_13.jpg" alt="image">
                         <figcaption>
                           <div class="caption">
-                            <h1>$ 100</h1>
-                            <p>PRIVATE BREWERY TOURS</p>
+                            <h4>PRIVATE BREWERY TOURS</h4>
+                            <p>$ 100</p>
+                            
                             </div>
                         </figcaption>
                     </figure>
@@ -129,8 +160,8 @@
                         <img src="./images/brewery/brewery_5.jpg" alt="image">
                         <figcaption>
                            <div class="caption">
-                            <h1>$ 25</h1>
-                            <p>EDUCATION PROGRAM</p>
+                            <h4>EDUCATION PROGRAM</h4>
+                            <p>$ 25</p>
                             </div>
                         </figcaption>
                     </figure>
@@ -147,8 +178,8 @@
                         <img src="./images/brewery/brewery_22.jpg" alt="image">
                         <figcaption>
                            <div class="caption">
-                            <h1>$ 6</h1>
-                            <p>PUBLIC BREWERY TOURS</p>
+                            <h4>PUBLIC BREWERY TOURS</h4>
+                            <p>$ 6</p>
                             </div>
                         </figcaption>
                     </figure>
@@ -258,10 +289,17 @@
     </div>
     </footer>
     <script type="text/javascript" src="./vender/uikit-3/js/uikit.min.js"></script>
-    <script type="text/javascript" src="./vendors/uikit-3/js/uikit-icons.min.js"></script>
+    <!-- <script type="text/javascript" src="./vendors/uikit-3/js/uikit-icons.min.js"></script> -->
     <script type="text/javascript" src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="./vender/slick-1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="./vender/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- <script type="text/javascript" src="./vender/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> -->
+    <script>
+        var $hamburger = $(".hamburger");
+        $hamburger.on("click", function(e) {
+          $hamburger.toggleClass("is-active");
+          // Do something else, like open/close menu
+        });
+      </script>
 </body>
 </html>
