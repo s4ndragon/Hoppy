@@ -361,7 +361,7 @@
 }
 /*logo & nav*/
 header {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     /* width: 100%; */
     /* min-width: 1300px; */
@@ -383,7 +383,7 @@ div.nav_container {
 }
 
 div.logo {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     font-size: 28px;
     /* -webkit-text-stroke: 3px white; */
@@ -397,7 +397,7 @@ div.logo {
 }
 
 div.logo > a > img {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 200px;
 }
 
@@ -452,7 +452,7 @@ nav.nav > ul.nav_bar {
     background-color: transparent;
 }
 
-.nav_bar > li > a.beers {
+.nav_bar > li > a.taproom {
     color: #60a41d;
 }
 
