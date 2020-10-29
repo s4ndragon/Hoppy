@@ -166,6 +166,12 @@
         justify-content: flex-end;
         transform: translateX(100%);
     }
+    .slick-next {
+        display: none;
+    }
+    .slick-prev {
+        display: none;
+    }
     div.is-active {
         display: flex;
         transform: translateX(-30%);
@@ -245,6 +251,12 @@
         display: flex;
         transform: translateX(-30%);
     }
+    .slick-next {
+        display: none;
+    }
+    .slick-prev {
+        display: none;
+    }
     div.taproom_info {
         display: flex;
         flex-direction: column;
@@ -316,6 +328,12 @@
     div.is-active {
         display: flex;
         transform: translateX(-30%);
+    }
+    .slick-next {
+        display: none;
+    }
+    .slick-prev {
+        display: none;
     }
     div.taproom_info {
         display: flex;
@@ -587,7 +605,6 @@ div.taproom_pic_container {
     width: 50px;
     height: 50px;
 }
-
 
 div.taproom_pics {
     /* border: 1px solid red; */
