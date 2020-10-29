@@ -613,7 +613,8 @@ div.about_us_pic > img {
     justify-content: center;
     justify-self: center;
     bottom: 50px;
-    /* width: 40%; */
+    max-width: 204px;
+    height: 206px;
 }
 
 div.about_story {
