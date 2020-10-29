@@ -207,6 +207,10 @@
         display: flex;
         transform: translateX(-30%);
     }
+    .banner_content img {
+        width: 120%;
+        /* height: 480px; */
+    }
     div.about_us_container,
     div.about_story {
         width: calc(95% - 200px);
@@ -370,7 +374,7 @@
 }
 /*logo & nav*/
 header {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     width: 100%;
     /* min-width: 1300px; */
@@ -383,7 +387,7 @@ header {
 }
 
 div.nav_container {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     /* display: flex; */
     /* width: 95%; */
     height: 70px;
@@ -467,7 +471,7 @@ nav.nav > ul.nav_bar {
 
 .hamburger {
     padding: 15px 15px 0;
-    transition: all 2s ease 2s;
+    /* transition: all 2s ease 2s; */
 }
 
 div.hamburger {
@@ -517,69 +521,39 @@ a:hover {
 }
 
 /*main*/
-div.about_container {
-    /* width: 95%; */
-    /* height: 840px; */
-    /* border: 1px solid rgb(43, 4, 43); */
-    display: flex;
-    position: relative;
-    top: 90px;
-    justify-content: center;
-}
-
-div.about_title_container {
-    display: flex;
-    width: 95%;
-    /* border: 1px solid palegreen; */
-    /* top: 90px; */
-    position: relative;
-}
-
-div.about_title {
-    /* border: 1px solid slateblue; */
-    display: flex;
-    justify-content: flex-start;
-    padding: 0;
-    margin: 0;
-    /* position: fixed; */
-    /* z-index: 90; */
-}
-
-div.about_title > h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-    font-size: 48px;
-}
-
 div.banner_container {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     position: relative;
     top: 30px;
     width: 100%;
     /* min-width: 1300px; */
-    height: 790px;
-    background-image: url(../images/about/header.jpg);
-    background-position: center;
-    background-attachment: scroll;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    align-self: center;
 }
 
 div.banner_title {
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-self: center;
+    width: 95%;
 }
 
 div.banner_title > h3 {
     font-family: "Montserrat", sans-serif;
-    color: white;
-    font-size: 100px;
-    font-weight: 900;
+    color: #22201f;
+    font-size: 48px;
+    font-weight: 100;
+    display: flex;
+    justify-self: center;
 }
-
+/* .banner_content {
+} */
 div.about_us_container {
-    border: 1px solid rgb(200, 206, 188);
+    /* border: 1px solid rgb(200, 206, 188); */
     position: relative;
     width: 100%;
     /* min-width: 1300px; */
@@ -593,7 +567,7 @@ div.about_us_container {
 }
 
 div.about_us_title {
-    border: 1px solid rgb(46, 25, 124);
+    /* border: 1px solid rgb(46, 25, 124); */
     position: relative;
     display: flex;
     justify-content: center;
@@ -611,7 +585,7 @@ div.about_us_title > h3 {
 }
 
 div.about_us_content {
-    border: 1px solid seagreen;
+    /* border: 1px solid seagreen; */
     display: flex;
     align-self: center;
 }
@@ -625,7 +599,7 @@ div.about_us_content > h3 {
 }
 
 div.about_us_pic {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-self: center;
@@ -643,7 +617,7 @@ div.about_us_pic > img {
 }
 
 div.about_story {
-    border: 1px solid royalblue;
+    /* border: 1px solid royalblue; */
     position: relative;
     top: 200px;
     width: 100%;
@@ -673,21 +647,21 @@ div.about_story_pic img {
     padding: 10px;
 }
 div.about_story_pic_container {
-    border: 1px solid khaki;
+    /* border: 1px solid khaki; */
     display: flex;
     justify-content: center;
     top: 200px;
 }
 
 div.about_story_pic {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     width: 95%;
     display: flex;
     justify-content: space-around;
 }
 div.about_story_pic_left,
 div.about_story_pic_right {
-    border: 1px solid hotpink;
+    /* border: 1px solid hotpink; */
     width: 300px;
     height: 300px;
 }
@@ -718,7 +692,7 @@ div.about_story_more_container {
 }
 
 div.about_story_more {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -726,7 +700,7 @@ div.about_story_more {
     width: 95%;
 }
 div.about_story_more_title {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     /* width: 90%; */
     text-align: center;
 }
@@ -737,7 +711,7 @@ div.about_story_more_title > h3 {
     line-height: 60px;
 }
 div.about_story_more_pics {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
