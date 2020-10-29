@@ -128,7 +128,6 @@
         flex-direction: column;
         width: 34%;
     }
-
     div.openhour_title {
         height: 35%;
     }
@@ -209,7 +208,7 @@
     }
     div.footer_middle {
         width: 70%;
-        padding: 10px;
+        padding: 70px 10px;
     }
     div.footer_bac_container {
         width: 350px;
@@ -281,7 +280,7 @@
     }
     div.footer_middle {
         width: 70%;
-        padding: 10px;
+        padding: 70px 10px;
     }
     div.footer_bac_container {
         width: 350px;
@@ -347,7 +346,7 @@
     }
     div.footer_middle {
         width: 70%;
-        padding: 10px;
+        padding: 70px 10px;
     }
     div.footer_bac_container {
         width: 350px;
@@ -567,10 +566,28 @@ div.taproom_pic_container {
     padding: 0;
     /* width: 95%; */
 }
+
+/* course btn */
 .slick-prev:before,
 .slick-next:before {
     color: #60a41d;
+    font-size: 50px;
 }
+
+.slick-next {
+    /* border: 1px solid black; */
+    width: 50px;
+    height: 50px;
+    right: -55px;
+}
+
+.slick-prev {
+    /* border: 1px solid black; */
+    left: -55px;
+    width: 50px;
+    height: 50px;
+}
+
 
 div.taproom_pics {
     /* border: 1px solid red; */
@@ -703,27 +720,27 @@ div.taproom_info_map > iframe {
 
 /*footer*/
 footer {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     background-color: #22201f;
     width: 100%;
     /* min-width: 1300px; */
     /* display: flex; */
     position: relative;
     /* height: 400px; */
-    top: 150px;
+    top: 250px;
     z-index: 1;
     color: white;
 }
 
 div.footer_openhour_container {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     /* width: 33%; */
     display: flex;
     flex-direction: column;
 }
 
 div.openhour_title {
-    border: 1px solid turquoise;
+    /* border: 1px solid turquoise; */
     width: 100%;
     /* height: 45%; */
     display: flex;
@@ -733,7 +750,7 @@ div.openhour_title {
 }
 
 div.openhour_title > h6 {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     font-family: "Baloo Tamma 2", cursive;
     font-weight: 900;
     font-size: 48px;
@@ -743,7 +760,7 @@ div.openhour_title > h6 {
 }
 
 div.openhour {
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     display: flex;
@@ -754,14 +771,15 @@ div.openhour {
 }
 
 div.footer_middle {
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
     /* width: 34%; */
     display: flex;
     flex-direction: column;
+    /* height: 400px; */
 }
 
 div.footer_slogan_container {
-    border: 1px solid rgb(30, 27, 212);
+    /* border: 1px solid rgb(30, 27, 212); */
     width: 100%;
     height: 60%;
     justify-content: center;
@@ -771,7 +789,7 @@ div.footer_slogan_container {
 }
 
 div.footer_slogan_container > h4 {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     font-family: "Baloo Tamma 2", cursive;
     font-weight: 900;
     color: #ffffff;
@@ -782,7 +800,7 @@ div.footer_slogan_container > h4 {
 }
 
 div.footer_media_container {
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -797,7 +815,7 @@ div.twi_icon,
 div.ig_icon,
 div.yt_icon,
 div.pin_icon {
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     height: auto;
     width: auto;
 }
@@ -813,7 +831,7 @@ div.pin_icon > img {
 }
 
 div.footer_bac_container {
-    border: 1px solid paleturquoise;
+    /* border: 1px solid paleturquoise; */
     /* width: 33%; */
     /* height: 100%; */
     display: flex;
@@ -821,7 +839,7 @@ div.footer_bac_container {
 }
 
 div.footer_bac_pic {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: auto;
     height: auto;
     display: flex;
@@ -829,7 +847,7 @@ div.footer_bac_pic {
 }
 
 div.footer_bac_pic > img {
-    border: 1px solid paleturquoise;
+    /* border: 1px solid paleturquoise; */
     width: 50%;
     height: auto;
 }
