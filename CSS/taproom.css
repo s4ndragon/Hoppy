@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+element.style {
+    display: none;
+}
 /* body {
     height: fit-content;
     min-width: 1200px;
@@ -762,7 +765,7 @@ footer {
     /* display: flex; */
     position: relative;
     /* height: 400px; */
-    top: 250px;
+    top: 100px;
     z-index: 1;
     color: white;
 }
