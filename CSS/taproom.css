@@ -172,6 +172,12 @@
     .slick-prev {
         display: none;
     }
+    .slick-next:before {
+        display: none;
+    }
+    .slick-prev:before {
+        display: none;
+    }
     div.is-active {
         display: flex;
         transform: translateX(-30%);
@@ -257,6 +263,12 @@
     .slick-prev {
         display: none;
     }
+    .slick-next:before {
+        display: none;
+    }
+    .slick-prev:before {
+        display: none;
+    }
     div.taproom_info {
         display: flex;
         flex-direction: column;
@@ -328,6 +340,12 @@
     div.is-active {
         display: flex;
         transform: translateX(-30%);
+    }
+    .slick-next:before {
+        display: none;
+    }
+    .slick-prev:before {
+        display: none;
     }
     .slick-next {
         display: none;
