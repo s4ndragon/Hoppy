@@ -213,14 +213,24 @@
     <script>
         $(document).ready(function(){
             $('.taproom_pics').slick({
-
                 dots: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                adaptiveHeight: true
-                            });
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            arrows: false
+                            // centerMode: true,
+                            // centerPadding: '40px',
+                            // slidesToShow: 3
+                        }
+                    }
+                ]
+            });
         })
     </script>
     <script>

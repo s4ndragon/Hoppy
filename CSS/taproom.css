@@ -168,18 +168,6 @@ element.style {
         justify-content: flex-end;
         transform: translateX(100%);
     }
-    .slick-next {
-        display: none;
-    }
-    .slick-prev {
-        display: none;
-    }
-    .slick-next:before {
-        display: none;
-    }
-    .slick-prev:before {
-        display: none;
-    }
     div.is-active {
         display: flex;
         transform: translateX(-30%);
@@ -259,18 +247,6 @@ element.style {
         display: flex;
         transform: translateX(-30%);
     }
-    .slick-next {
-        display: none;
-    }
-    .slick-prev {
-        display: none;
-    }
-    .slick-next:before {
-        display: none;
-    }
-    .slick-prev:before {
-        display: none;
-    }
     div.taproom_info {
         display: flex;
         flex-direction: column;
@@ -342,18 +318,6 @@ element.style {
     div.is-active {
         display: flex;
         transform: translateX(-30%);
-    }
-    .slick-next:before {
-        display: none;
-    }
-    .slick-prev:before {
-        display: none;
-    }
-    .slick-next {
-        display: none;
-    }
-    .slick-prev {
-        display: none;
     }
     div.taproom_info {
         display: flex;
@@ -507,6 +471,9 @@ div.hamburger {
     position: absolute;
     right: -70px;
     top: 70px;
+}
+div.hamburger:focus {
+    
 }
 
 div.hamburger > .nav_bar {
