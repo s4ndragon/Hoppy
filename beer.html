@@ -6,71 +6,43 @@
     <title>BEERS</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet" href="./vender/uikit-3/css/uikit.min.css">
-    <link href="./vender/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
     <script src="./vender/uikit-3/js/uikit.min.js"></script>
-    <!-- <script src="./vendors/uikit-3/js/uikit-icons.min.js"></script> -->
     <script src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/beer.css"/>
 </head>
 <body>
     <header>
-        <div class="nav_container">
-            <div class="logo">  
-                <a href="./index.html"><img src="./images/LOGO.png"></a>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div> 
+            <ul class="nav_links">
+                <li>
+                    <a class="beers" href="./beer.html">BEERS</a>
+                </li>
+                <li>
+                    <a class="taproom" href="./taproom.html">TAPROOM</a>
+                </li>
+                <li>
+                    <a class="brewery" href="./brewery.html">BREWERY</a>
+                </li>
+                <li>
+                    <a class="about" href="./about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a class="events" href="./events.html">EVENTS</a>
+                </li>
+                <li>
+                    <a class="shop" href="./shop.html">SHOP</a>
+                </li>
+            </ul>
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logogo.png" alt=""></a>
             </div>
-            <nav class="nav">
-                <ul class="nav_bar">
-                    <li>
-                        <a class="beers" href="./beer.html">BEERS</a>
-                    </li>
-                    <li>
-                        <a class="taproom" href="./taproom.html">TAPROOM</a>
-                    </li>
-                    <li>
-                        <a class="brewery" href="./brewery.html">BREWERY</a>
-                    </li>
-                    <li>
-                        <a class="about" href="./about.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="events" href="./events.html">EVENTS</a>
-                    </li>
-                    <li>
-                        <a class="shop" href="./shop.html">SHOP</a>
-
-                    </li>
-                </ul>
-                <button class="hamburger hamburger--spring" type="button">
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                  </button>
-            </nav>
-            <!-- <button class="hamburger_icon">hi</button> -->
-            <div class="hamburger"> 
-                <ul class="nav_bar">
-                    <li>
-                        <a class="beers" href="./beer.html">BEERS</a>
-                    </li>
-                    <li>
-                        <a class="taproom" href="./taproom.html">TAPROOM</a>
-                    </li>
-                    <li>
-                        <a class="brewery" href="./brewery.html">BREWERY</a>
-                    </li>
-                    <li>
-                        <a class="about" href="./about.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="events" href="./events.html">EVENTS</a>
-                    </li>
-                    <li>
-                        <a class="shop" href="./shop.html">SHOP</a>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </nav>
     </header>
     <main>
         <div class="beer_container" uk-filter="target: .js-filter">
@@ -106,10 +78,10 @@
                 </li>
                 <li data-style="ipa">
                     <div class="uk-card uk-card-default uk-card-body">
-                        <a href="./product.html"><img src="./images/beers/hoptimum_product_pic.png" /></a>
+                        <a href="./hoptimum.html"><img src="./images/beers/hoptimum_product_pic.png" /></a>
                     </div>
                     <div class="uk-card-footer">
-                        <a href="./product.html" class="uk-button uk-button-text">HOPTIMUM</a><br>
+                        <a href="./hoptimum.html" class="uk-button uk-button-text">HOPTIMUM</a><br>
                         <p class="description">IPA | 10.6%</p>
                     </div>
                 </li>
@@ -194,7 +166,7 @@
                 <h6>OPEN HOUR</h6>
             </div>
             <div class="openhour">                    
-                    <div class="openhour_date">
+                <div class="openhour_date">
                         <div class="date" id="mon_date">Monday</div>
                         <div class="date" id="tue_date">Tuesday</div>
                         <div class="date" id="wed_date">Wednesday</div>
@@ -216,8 +188,8 @@
         </div>
         <div class="footer_middle">
             <div class="footer_slogan_container">
-                <h4>DONT WORRY<br />BE HOPPY</h4>
-            </div>
+            <h4>DONT WORRY<br />BE HOPPY</h4>
+        </div>
             <div class="footer_media_container">
                 <div class="fb_icon">
                     <a class="fb_link" href="https://facebook.com" target="_blank">
@@ -255,11 +227,20 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        var $hamburger = $(".hamburger");
-        $hamburger.on("click", function(e) {
-          $hamburger.toggleClass("is-active");
-          // Do something else, like open/close menu
-        });
-      </script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav_links')
+        const links = document.querySelectorAll('.nav_links li')
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('on')
+            navLinks.classList.toggle('open')
+            links.forEach(link => {
+                link.classList.toggle('fade')
+            })
+        })
+    </script>
 </body>
 </html>
+
+    </body>
+    </html>

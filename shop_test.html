@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500;600;700;800&family=Modak&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/shop_test.css">
+        <title>shop test</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div> 
+                <ul class="nav_links">
+                    <li>
+                        <a class="beers" href="./beer.html">BEERS</a>
+                    </li>
+                    <li>
+                        <a class="taproom" href="./taproom.html">TAPROOM</a>
+                    </li>
+                    <li>
+                        <a class="brewery" href="./brewery.html">BREWERY</a>
+                    </li>
+                    <li>
+                        <a class="about" href="./about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="events" href="./events.html">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="shop" href="./shop.html">SHOP</a>
+                    </li>
+                </ul>
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logogo.png" alt=""></a>
+                </div>
+            </nav>
+        </header>
+        <section class="loading">
+            <!-- <img src="../images/LOGO.png" width='300' alt="hoppy"> -->
+            <h1>Hoppy</h1>
+        </section>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav_links')
+            const links = document.querySelectorAll('.nav_links li')
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('on')
+                navLinks.classList.toggle('open')
+                links.forEach(link => {
+                    link.classList.toggle('fade')
+                })
+            })
+        </script>
+    </body>
+</html>
