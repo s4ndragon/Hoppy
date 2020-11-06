@@ -294,7 +294,6 @@
     .beerInfo {
         top: 0px;
         height: 1000px;
-
     }
     .beer_bg_img {
         width: 100%;
@@ -872,7 +871,7 @@ nav {
     font-weight: 100;
     width: 200px;
     /* height: 8vh; */
-    position: relative;
+    /* position: relative; */
     /* padding-top: 1vh; */
     -webkit-text-stroke: 3.5px #22201f;
     padding-left: 5%;

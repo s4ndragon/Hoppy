@@ -7,78 +7,44 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet" href="./vender/uikit-3/css/uikit.min.css">
     <script src="./vender/uikit-3/js/uikit.min.js"></script>
-    <link href="./vender/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
-    <!-- <script src="./vendors/uikit-3/js/uikit-icons.min.js"></script> -->
     <script src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/about.css">
 </head>
 <body>
     <header>
-        <div class="nav_container">
-            <div class="logo">  
-                <a href="./index.html"><img src="./images/LOGO.png"></a>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div> 
+            <ul class="nav_links">
+                <li>
+                    <a class="beers" href="./beer.html">BEERS</a>
+                </li>
+                <li>
+                    <a class="taproom" href="./taproom.html">TAPROOM</a>
+                </li>
+                <li>
+                    <a class="brewery" href="./brewery.html">BREWERY</a>
+                </li>
+                <li>
+                    <a class="about" href="./about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a class="events" href="./events.html">EVENTS</a>
+                </li>
+                <li>
+                    <a class="shop" href="./shop.html">SHOP</a>
+                </li>
+            </ul>
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logogo.png" alt=""></a>
             </div>
-            <nav class="nav">
-                <ul class="nav_bar">
-                    <li>
-                        <a class="beers" href="./beer.html">BEERS</a>
-                    </li>
-                    <li>
-                        <a class="taproom" href="./taproom.html">TAPROOM</a>
-                    </li>
-                    <li>
-                        <a class="brewery" href="./brewery.html">BREWERY</a>
-                    </li>
-                    <li>
-                        <a class="about" href="./about.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="events" href="./events.html">EVENTS</a>
-                    </li>
-                    <li>
-                        <a class="shop" href="./shop.html">SHOP</a>
-                </ul>
-                <button class="hamburger hamburger--spring" type="button">
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                  </button>
-            </nav>
-            <!-- <button class="hamburger_icon">hi</button> -->
-            <div class="hamburger"> 
-                <ul class="nav_bar">
-                    <li>
-                        <a class="beers" href="./beer.html">BEERS</a>
-                    </li>
-                    <li>
-                        <a class="taproom" href="./taproom.html">TAPROOM</a>
-                    </li>
-                    <li>
-                        <a class="brewery" href="./brewery.html">BREWERY</a>
-                    </li>
-                    <li>
-                        <a class="about" href="./about.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="events" href="./events.html">EVENTS</a>
-                    </li>
-                    <li>
-                        <a class="shop" href="./shop.html">SHOP</a>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </nav>
     </header>
-
-    <!-- <div class="about_container">
-        <div class="about_title_container">
-            <div class="about_title">
-                <h3>ABOUT</h3>
-            </div>
-        </div>
-    </div> -->
-    
+    <main>
     <div class="banner_container">
         <div class="banner_title">
             <h3>ABOUT US</h3>
@@ -147,6 +113,7 @@
             </div>
         </div>
     </div>
+</main>
     <footer>
         <div class="footer_openhour_container">
             <div class="openhour_title">
@@ -214,11 +181,17 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        var $hamburger = $(".hamburger");
-        $hamburger.on("click", function(e) {
-          $hamburger.toggleClass("is-active");
-          // Do something else, like open/close menu
-        });
-      </script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav_links')
+        const links = document.querySelectorAll('.nav_links li')
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('on')
+            navLinks.classList.toggle('open')
+            links.forEach(link => {
+                link.classList.toggle('fade')
+            })
+        })
+    </script>
 </body>
 </html>

@@ -118,7 +118,6 @@ ul {
         top: 50%;
         transform: translate(-5%, -50%) ;
         z-index: 3;
-        /* position: sticky; */
     }
     .nav_links {
         position: fixed;
