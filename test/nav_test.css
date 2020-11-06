@@ -232,13 +232,22 @@ nav {
     color: #60a41d!important ;
     background: #22201f;
 }
+.bk > .line {
+    background-color: #60a41d;
+}
 .white, .white a {
     color: #22201f!important ;
     background: white;
 }
+.white > .line {
+    background-color: #22201f;
+}
 .green, .green a {
     color: white!important ;
     background: #60a41d;
+}
+.green > .line {
+    background-color: #fff;
 }
 .logo {
     /* border: 1px solid blue; */
@@ -293,7 +302,7 @@ nav {
 .hamburger {
     width: 30px;
     height: 20px;
-    position: relative;
+    /* position: relative; */
 }
 .loading {
     height: 90vh;
