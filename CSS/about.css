@@ -180,7 +180,7 @@ ul {
         clip-path: circle(1500px at 90% -10%);
         -webkit-clip-path: circle(1500px at 90% -10%);
         pointer-events: all;
-        z-index: 4;
+        z-index: 2;
     }
     .nav_links li {
         opacity: 0;
