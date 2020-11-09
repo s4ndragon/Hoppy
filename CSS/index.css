@@ -610,10 +610,35 @@ ul li a{
     display: flex;
     justify-content: center;
 }
-.product img {
-    /* border: 1px solid green; */
-    width: 60%;
-    padding-top: 20px;
+li > a > div > h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+li > a > div > p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+li.hoptimum {
+    background-image: url(../images/index/hoptimum_pack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% ;
+
+}
+li.space_dust {
+    background-image: url(../images/index/spaceDust_pack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% ;
+}
+li.blk {
+    background-image: url(../images/beers/BlackIsBeautiful.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% ;
 }
 li.guava_boat {
     background-image: url(../images/beers/guava_boat_cover.jpg);
@@ -955,12 +980,14 @@ div.openhour_title > h6 {
 }
 div.openhour {
     /* border: 1px solid pink; */
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+.openhour > div > div {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
 }
 .openhour_date {
     width: 60%;
