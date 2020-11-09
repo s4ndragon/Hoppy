@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./vender/uikit-3/css/uikit.min.css">
     <link rel="stylesheet" href="./vender/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./vender/slick-1.8.1/slick/slick-theme.css">
+    <script type="text/javascript" src="./vender/uikit-3/js/uikit.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./vender/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./JS/nav_footer.js"></script>
     <link rel="stylesheet" href="./CSS/events.css">
 </head>
 <body>
@@ -34,9 +39,6 @@
                 </li>
                 <li>
                     <a class="events" href="./events.html">EVENTS</a>
-                </li>
-                <li>
-                    <a class="shop" href="./shop.html">SHOP</a>
                 </li>
             </ul>
             <div class="logo">
@@ -113,35 +115,30 @@
         </form>
     </div>
 </main>
-
-
-
-
-
 <footer>
     <div class="footer_openhour_container">
         <div class="openhour_title">
             <h6>OPEN HOUR</h6>
         </div>
-        <div class="openhour">                    
+        <div class="openhour">     
                 <div class="openhour_date">
-                    <div class="date" id="mon_date">Monday</div>
-                    <div class="date" id="tue_date">Tuesday</div>
-                    <div class="date" id="wed_date">Wednesday</div>
-                    <div class="date" id="thu_date">Thursday</div>
-                    <div class="date" id="fri_date">Friday</div>
-                    <div class="date" id="sat_date">Saturday</div>
-                    <div class="date" id="sun_date">Sunday</div>
+                    <div class="date" id="mon">Monday</div>
+                    <div class="date" id="tue">Tuesday</div>
+                    <div class="date" id="wed">Wednesday</div>
+                    <div class="date" id="thu">Thursday</div>
+                    <div class="date" id="fri">Friday</div>
+                    <div class="date" id="sat">Saturday</div>
+                    <div class="date" id="sun">Sunday</div>
                 </div>
                 <div class="openhour_time">
                     <div class="time" id="mon_time">14:00 - 22:00</div>
-                    <div class="time" id="mon_time">14:00 - 22:00</div>
-                    <div class="time" id="mon_time">14:00 - 22:00</div>
-                    <div class="time" id="mon_time">14:00 - 22:00</div>
-                    <div class="time" id="mon_time">14:00 - 22:00</div>
+                    <div class="time" id="tue_time">14:00 - 22:00</div>
+                    <div class="time" id="wed_time">14:00 - 22:00</div>
+                    <div class="time" id="thu_time">14:00 - 22:00</div>
+                    <div class="time" id="fri_time">14:00 - 22:00</div>
                     <div class="time" id="sat_time">12:00 - 22:00</div>
-                    <div class="time" id="sat_time">12:00 - 22:00</div>
-                </div>                  
+                    <div class="time" id="sun_time">12:00 - 22:00</div>
+                </div>
         </div>
     </div>
     <div class="footer_middle">
@@ -183,22 +180,5 @@
     </div>
 </div>
 </footer>
-<script type="text/javascript" src="./vender/uikit-3/js/uikit.min.js"></script>
-<script type="text/javascript" src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="./vender/slick-1.8.1/slick/slick.min.js"></script>
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav_links')
-    const links = document.querySelectorAll('.nav_links li')
-
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('on')
-        navLinks.classList.toggle('open')
-        links.forEach(link => {
-            link.classList.toggle('fade')
-        })
-    })
-</script>
 </body>
 </html>

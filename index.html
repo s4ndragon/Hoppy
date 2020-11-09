@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEER</title>
+    <title>HOPPY</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet" href="./vender/uikit-3/css/uikit.min.css">
+    <script type="text/javascript" src="./vender/uikit-3/js/uikit.min.js"></script>
     <link rel="stylesheet" href="./vender/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./vender/slick-1.8.1/slick/slick-theme.css">
+    <script type="text/javascript" src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/nav_footer.js"></script>
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
 <body>
@@ -35,9 +39,6 @@
                 <li>
                     <a class="events" href="./events.html">EVENTS</a>
                 </li>
-                <li>
-                    <a class="shop" href="./shop.html">SHOP</a>
-                </li>
             </ul>
             <div class="logo">
                 <a href="./index.html"><img src="./images/logogo.png" alt=""></a>
@@ -46,162 +47,140 @@
     </header>
     <main>
         <section class="promo">
-            <div class="promo_container">
-                <div class="promo_pic">
-                    <a href="./product.html">
-                        <img class="promo_pic" src="./images/index/Hoptimum-Bottle.png"/>
-                    </a>
-                </div>
-                <div class="promo_content">
-                    <h2 class="promo_detail">THE BEER WILL<br />BLOW YOUR<br />DAMN MIND</h2>
-                </div>
+            <div class="promo_pic">
+                <a href="./hoptimum.html">
+                    <img src="./images/index/Hoptimum-Bottle.png" alt="hopyimum">
+                </a>
+            </div>
+            <div class="promo_content">
+                <a href="./hoptimum.html">
+                    <h2>THE BEER WILL<br />BLOW YOUR<br />DAMN MIND</h2>
+                </a>
             </div>
         </section>
-        <section class="products">
-            <div class="product_container">
-                <div class="product_pic">
-                    <a href="hoptimum.html">
-                        <img src="./images/index/hoptimum_pack.png" />
-                    </a>
-                </div>
-                <div class="product_content">
-                    <h4>THE<br />HOPPIEST<br />DRINKABLE<br />TRIPLE</h4>
-                </div>
+        <section class="product">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <a href="./hoptimum.html">
+                            <img src="./images/index/hoptimum_pack.png" alt="">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">HOPYIMUM</h3>
+                                <p class="uk-margin-remove">The hoppest beer you have ever drink!</p>                           
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./hoptimum.html">
+                            <img src="./images/index/spaceDust_pack.png" alt="">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">SPACE DUST</h3>
+                                <p class="uk-margin-remove">Bring</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./hoptimum.html">
+                            <img src="./images/beers/BlackIsBeautiful.png" alt="">
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">BLACK IS BEAUTIFUL</h3>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="guava_boat">
+                        <a href="./hoptimum.html">
+                            <!-- <img src="./images/beers/guava_boat_cover.jpg" alt=""> -->
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">BLACK IS BEAUTIFUL</h3>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
             </div>
         </section>
-        <section class="ontap">
-            <div class="ontap_container">
-                <div class="ontap_title">
-                    <h2>ON TAP</h2>
+        <section class="onTap">
+            <div class="onTap_title">
+                <h2>on tap</h2>
+            </div>
+            <div class="onTap_container">
+                <div class="hoptimum">
+                    <a href="./hoptimum.html">
+                        <h3>hoptimum</h3>
+                    </a>
+                    <p>Imperial IPA ｜ 10.6 %</p>
                 </div>
-                <div class="ontap_list">
-                    <div class="ontap_names">
-                            <div class="ontap_name p1">
-                                <a href="hoptimum.html">
-                                    HOPTIMUM
-                                </a>
-                            </div>
-                            <div class="ontap_name p2">
-                                <a href="#">
-                                    PEOPLE POWER
-                                </a>
-                            </div>
-                            <div class="ontap_name p3"> 
-                                <a href="#"> 
-                                    DARE TO KNOW
-                                </a>
-                            </div> 
-                    </div>
-                    <div class="ontap_details">
-                        <div class="hoptimum">
-                            <div class="ontap_style">
-                                Imperial IPA
-                            </div>
-                            <div class="ontap_divide">
-                                ｜
-                            </div>
-                            <div class="ontap_abv">
-                                10.6 %
-                            </div>
-                        </div>
-                        <div class="people_power">
-                            <div class="ontap_style">
-                                Pilson
-                            </div>
-                            <div class="ontap_divide">
-                                ｜
-                            </div>
-                            <div class="ontap_abv">
-                                5.7 %
-                            </div>
-                        </div>
-                        <div class="dare_to_know">
-                            <div class="ontap_style">
-                                Double Dry Hopped IPA
-                            </div>
-                            <div class="ontap_divide">
-                                ｜
-                            </div>
-                            <div class="ontap_abv">
-                                12 %
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ontap_names">
-                        <div class="ontap_name p4"><a href="#">HOP BULLET</a></div>
-                        <div class="ontap_name p5"><a href="#">IMPERIAL STOUT</a></div>
-                        <div class="ontap_name p6"><a href="#">DRAGONSTOOTH</a></div>
-                    </div>
-                    <div class="ontap_details">
-                        <div class="hop_bullet">
-                            <div class="ontap_style">Imperial IPA</div>
-                            <div class="ontap_divide">｜</div>
-                            <div class="ontap_abv">8 %</div>
-                        </div>
-                        <div class="imperial_stuout">
-                            <div class="ontap_style">Imperial Stout</div>
-                            <div class="ontap_divide">｜</div>
-                            <div class="ontap_abv">10.5 %</div>
-                        </div>
-                        <div class="dragonstooth">
-                            <div class="ontap_style">Imperial Stout</div>
-                            <div class="ontap_divide">｜</div>
-                            <div class="ontap_abv">8.1 %</div>
-                        </div>
-                    </div>
-                    <div class="ontap_names">
-                        <div class="ontap_name p7"><a href="#">URBAN LAGER</a></div>
-                        <div class="ontap_name p8"><a href="#">SPACE DUST</a></div>
-                        <div class="ontap_name p9"><a href="#">RELAX</a></div>
-                    </div>
-                    <div class="ontap_details">
-                        <div class="urban_lager">
-                            <div class="ontap_style">Lager</div>
-                            <div class="ontap_divide">｜</div>
-                            <div class="ontap_abv">4.7 %</div>
-                        </div>
-                        <div class="space_dust">
-                            <div class="ontap_style">IPA</div>
-                            <div class="ontap_divide">｜</div>
-                            <div class="ontap_abv">8.2 %</div>
-                        </div>
-                        <div class="relax">
-                            <div class="ontap_style">Hazy IPA</div>
-                            <div class="ontap_divide">｜</div>
-                            <div class="ontap_abv">6.8 %</div>
-                        </div>
-                    </div>
+                <div class="people_power">
+                    <a href="./hoptimum.html">
+                        <h3>people power</h3>
+                    </a>
+                    <p>Imperial IPA ｜ 10.6 %</p>
+                </div>
+                <div class="guava_boat">
+                    <a href="./hoptimum.html">
+                        <h3>guava boat</h3>
+                    </a>
+                    <p>Imperial IPA ｜ 10.6 %</p>
+                </div>
+                <div class="black">
+                    <a href="./hoptimum.html">
+                        <h3>black is beautiful</h3>
+                    </a>
+                    <p>Imperial IPA ｜ 10.6 %</p>
+                </div>
+                <div class="cookie">
+                    <a href="./hoptimum.html">
+                        <h3>cookie n cream</h3>
+                    </a>
+                    <p>Imperial IPA ｜ 10.6 %</p>
+                </div>
+                <div class="99days">
+                    <a href="./hoptimum.html">
+                        <h3>99 days banana bread</h3>
+                    </a>
+                    <p>Imperial IPA ｜ 10.6 %</p>
+                </div>
+                <div class="clean_lines">
+                    <a href="./hoptimum.html">
+                        <h3>clean lines creative</h3>
+                    </a>
+                    <p>Imperial IPA ｜ 10.6 %</p>
+                </div>
+                <div class="hoptimum">
+                    <a href="./hoptimum.html">
+                        <h3>black is beautiful</h3>
+                    </a>
+                    <p>Imperial IPA ｜ 10.6 %</p>
+                </div>
+                <div class="hoptimum">
+                    <a href="./hoptimum.html">
+                        <h3>black is beautiful</h3>
+                    </a>
+                    <p>Imperial IPA ｜ 10.6 %</p>
                 </div>
             </div>
         </section>
         <section class="taproom">
-            <div class="taproom_container">
-                <div class="taproom_content">
-                    <h4>TapRM</h4>
-                    <p>
-                        Our production location and OG tasting room. 21+ only!
-                    </p>
-                    <div class="taproom_btn">
-                        <input type="button" value="Open Today 2pm-10pm" onclick="location.href='./taproom.html'"/>
-                    </div>
-                </div>
-                <div class="taproom_pic">
-                    <img src="./images/index/taproom_pic.jpg" uk-scrollspy="cls: uk-animation-slide-right; repeat: true"/>
-                </div>
+            <div class="taproom_content">
+                <h2>TAP RM</h2>
+                <p>Our production location and OG tasting room. 21+ only!</p>
+                <a href="./taproom.html"><button id="openTime_tr"></button></a>
+            </div>
+            <div class="taproom_pic">
+                <img src="./images/index/taproom_pic.jpg" alt="taproom" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
             </div>
         </section>
         <section class="brewery">
-            <div class="brewery_container">
-                <div class="brewery_pic">
-                    <img src="./images/index/brewery_index.jpg" uk-scrollspy="cls: uk-animation-slide-left; repeat: true"/>
-                </div>
-                <div class="brewery_content">
-                    <h4>Brewery</h4>
-                    <p>The place where the magic happens. Brewery tour is available.</p>
-                    <div class="brewery_btn">
-                        <input type="button" value="Closed Today" onclick="location.href='./brewery.html'"/>
-                    </div>
-                </div>
+            <div class="brewery_content">
+                <h2>BREWERY</h2>
+                <p>The place where the magic happens. Brewery tour is available.</p>
+                <a href="./brewery.html"><button id="openTime_brewery"></button></a>
+            </div>
+            <div class="brewery_pic">
+                <img src="./images/index/brewery_index.jpg" alt="brewery" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
             </div>
         </section>
         <section class="about">
@@ -209,58 +188,42 @@
                 <div class="about_layer">
                     <div class="about_wrap" uk-scrollspy="cls: uk-animation-scale-up; delay: 1000; repeat: true">
                         <a href="/about.html">
-                        WE LOVE<br />
-                        BEER<br />
-                        SO WE BREW<br />
-                        OUR OWN<br />
+                            <h3>
+                                WE LOVE<br />
+                                BEER<br />
+                                SO WE BREW<br />
+                                OUR OWN<br />
+                            </h3>
                         </a>
                     </div>
-                    <!-- <div class="about_plus">
-                        +
-                    </div> -->
-                </div>
-            </div>
-        </section>
-        <section class="shop">
-            <div class="shop_container">
-                <div class="shop_content">
-                    <h4>
-                        MERCHANDISE<br />
-                        FOR<br />
-                        HOPSTER
-                    </h4>
-                </div>
-                <div class="shop_pic" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 1000; repeat: true">
-                    <img src="./images/index/beer_opener.png" />
                 </div>
             </div>
         </section>
     </main>
-
-        <footer>
+    <footer>
         <div class="footer_openhour_container">
             <div class="openhour_title">
                 <h6>OPEN HOUR</h6>
             </div>
-            <div class="openhour">                    
-                <div class="openhour_date">
-                        <div class="date" id="mon_date">Monday</div>
-                        <div class="date" id="tue_date">Tuesday</div>
-                        <div class="date" id="wed_date">Wednesday</div>
-                        <div class="date" id="thu_date">Thursday</div>
-                        <div class="date" id="fri_date">Friday</div>
-                        <div class="date" id="sat_date">Saturday</div>
-                        <div class="date" id="sun_date">Sunday</div>
+            <div class="openhour">     
+                    <div class="openhour_date">
+                        <div class="date" id="mon">Monday</div>
+                        <div class="date" id="tue">Tuesday</div>
+                        <div class="date" id="wed">Wednesday</div>
+                        <div class="date" id="thu">Thursday</div>
+                        <div class="date" id="fri">Friday</div>
+                        <div class="date" id="sat">Saturday</div>
+                        <div class="date" id="sun">Sunday</div>
                     </div>
                     <div class="openhour_time">
                         <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
+                        <div class="time" id="tue_time">14:00 - 22:00</div>
+                        <div class="time" id="wed_time">14:00 - 22:00</div>
+                        <div class="time" id="thu_time">14:00 - 22:00</div>
+                        <div class="time" id="fri_time">14:00 - 22:00</div>
                         <div class="time" id="sat_time">12:00 - 22:00</div>
-                        <div class="time" id="sat_time">12:00 - 22:00</div>
-                    </div>                  
+                        <div class="time" id="sun_time">12:00 - 22:00</div>
+                    </div>
             </div>
         </div>
         <div class="footer_middle">
@@ -302,22 +265,5 @@
         </div>
     </div>
     </footer>
-    <script type="text/javascript" src="./vender/uikit-3/js/uikit.min.js"></script>
-    <script type="text/javascript" src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./vender/slick-1.8.1/slick/slick.min.js"></script>
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav_links')
-        const links = document.querySelectorAll('.nav_links li')
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('on')
-            navLinks.classList.toggle('open')
-            links.forEach(link => {
-                link.classList.toggle('fade')
-            })
-        })
-    </script>
-    </body>
+</body>
 </html>

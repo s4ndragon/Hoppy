@@ -8,7 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Modak&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./vender/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./vender/slick-1.8.1/slick/slick-theme.css">
+    <script type="text/javascript" src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./vender/slick-1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="./CSS/taproom.css">
+    <script src="./JS/nav_footer.js"></script>
+    <script src="./JS/taproom.js"></script>
 </head>
 <body>
     <header>
@@ -34,9 +39,6 @@
                 </li>
                 <li>
                     <a class="events" href="./events.html">EVENTS</a>
-                </li>
-                <li>
-                    <a class="shop" href="./shop.html">SHOP</a>
                 </li>
             </ul>
             <div class="logo">
@@ -112,25 +114,25 @@
             <div class="openhour_title">
                 <h6>OPEN HOUR</h6>
             </div>
-            <div class="openhour">                    
+            <div class="openhour">     
                     <div class="openhour_date">
-                        <div class="date" id="mon_date">Monday</div>
-                        <div class="date" id="tue_date">Tuesday</div>
-                        <div class="date" id="wed_date">Wednesday</div>
-                        <div class="date" id="thu_date">Thursday</div>
-                        <div class="date" id="fri_date">Friday</div>
-                        <div class="date" id="sat_date">Saturday</div>
-                        <div class="date" id="sun_date">Sunday</div>
+                        <div class="date" id="mon">Monday</div>
+                        <div class="date" id="tue">Tuesday</div>
+                        <div class="date" id="wed">Wednesday</div>
+                        <div class="date" id="thu">Thursday</div>
+                        <div class="date" id="fri">Friday</div>
+                        <div class="date" id="sat">Saturday</div>
+                        <div class="date" id="sun">Sunday</div>
                     </div>
                     <div class="openhour_time">
                         <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
+                        <div class="time" id="tue_time">14:00 - 22:00</div>
+                        <div class="time" id="wed_time">14:00 - 22:00</div>
+                        <div class="time" id="thu_time">14:00 - 22:00</div>
+                        <div class="time" id="fri_time">14:00 - 22:00</div>
                         <div class="time" id="sat_time">12:00 - 22:00</div>
-                        <div class="time" id="sat_time">12:00 - 22:00</div>
-                    </div>                  
+                        <div class="time" id="sun_time">12:00 - 22:00</div>
+                    </div>
             </div>
         </div>
         <div class="footer_middle">
@@ -172,44 +174,5 @@
         </div>
     </div>
     </footer>
-    <script type="text/javascript" src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./vender/slick-1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.taproom_pics').slick({
-                dots: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 4000,
-                adaptiveHeight: true,
-                responsive: [
-                    {
-                        breakpoint: 991,
-                        settings: {
-                            arrows: false
-                            // centerMode: true,
-                            // centerPadding: '40px',
-                            // slidesToShow: 3
-                        }
-                    }
-                ]
-            });
-        })
-    </script>
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav_links')
-        const links = document.querySelectorAll('.nav_links li')
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('on')
-            navLinks.classList.toggle('open')
-            links.forEach(link => {
-                link.classList.toggle('fade')
-            })
-        })
-    </script>
 </body>
 </html>

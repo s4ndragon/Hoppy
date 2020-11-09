@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./vender/uikit-3/css/uikit.min.css">
     <script src="./vender/uikit-3/js/uikit.min.js"></script>
     <script src="https://kit.fontawesome.com/f33b73886c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./JS/nav_footer.js"></script>
     <link rel="stylesheet" href="./CSS/about.css">
 </head>
 <body>
@@ -34,9 +36,6 @@
                 </li>
                 <li>
                     <a class="events" href="./events.html">EVENTS</a>
-                </li>
-                <li>
-                    <a class="shop" href="./shop.html">SHOP</a>
                 </li>
             </ul>
             <div class="logo">
@@ -114,84 +113,70 @@
         </div>
     </div>
 </main>
-    <footer>
-        <div class="footer_openhour_container">
-            <div class="openhour_title">
-                <h6>OPEN HOUR</h6>
-            </div>
-            <div class="openhour">                    
-                    <div class="openhour_date">
-                        <div class="date" id="mon_date">Monday</div>
-                        <div class="date" id="tue_date">Tuesday</div>
-                        <div class="date" id="wed_date">Wednesday</div>
-                        <div class="date" id="thu_date">Thursday</div>
-                        <div class="date" id="fri_date">Friday</div>
-                        <div class="date" id="sat_date">Saturday</div>
-                        <div class="date" id="sun_date">Sunday</div>
-                    </div>
-                    <div class="openhour_time">
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="mon_time">14:00 - 22:00</div>
-                        <div class="time" id="sat_time">12:00 - 22:00</div>
-                        <div class="time" id="sat_time">12:00 - 22:00</div>
-                    </div>                  
-            </div>
+<footer>
+    <div class="footer_openhour_container">
+        <div class="openhour_title">
+            <h6>OPEN HOUR</h6>
         </div>
-        <div class="footer_middle">
-            <div class="footer_slogan_container">
-            <h4>DONT WORRY<br />BE HOPPY</h4>
+        <div class="openhour">     
+                <div class="openhour_date">
+                    <div class="date" id="mon">Monday</div>
+                    <div class="date" id="tue">Tuesday</div>
+                    <div class="date" id="wed">Wednesday</div>
+                    <div class="date" id="thu">Thursday</div>
+                    <div class="date" id="fri">Friday</div>
+                    <div class="date" id="sat">Saturday</div>
+                    <div class="date" id="sun">Sunday</div>
+                </div>
+                <div class="openhour_time">
+                    <div class="time" id="mon_time">14:00 - 22:00</div>
+                    <div class="time" id="tue_time">14:00 - 22:00</div>
+                    <div class="time" id="wed_time">14:00 - 22:00</div>
+                    <div class="time" id="thu_time">14:00 - 22:00</div>
+                    <div class="time" id="fri_time">14:00 - 22:00</div>
+                    <div class="time" id="sat_time">12:00 - 22:00</div>
+                    <div class="time" id="sun_time">12:00 - 22:00</div>
+                </div>
         </div>
-            <div class="footer_media_container">
-                <div class="fb_icon">
-                    <a class="fb_link" href="https://facebook.com" target="_blank">
-                    <i class="fab fa-facebook-f fa-2x" style="color: white;"></i>
-                    </a>
-                </div>
-                <div class="twi_icon">
-                    <a class="twi_link" href="https://twitter.com" target="_blank">
-                        <i class="fab fa-twitter fa-2x" style="color: white;"></i>
-                    </a>
-                </div>
-                <div class="ig_icon">
-                    <a class="ig_link" href="https://www.instagram.com/" target="_blank">
-                        <i class="fab fa-instagram fa-2x" style="color: white;"></i>
-                    </a>
-                </div>
-                <div class="yt_icon">
-                    <a class="yt_link" href="https://youtube.com/" target="_blank">
-                        <i class="fab fa-youtube fa-2x" style="color: white;"></i>
-                    </a>
-                </div>
-                <div class="pin_icon">
-                    <a class="pin_link" href="https://www.pinterest.com/" target="_blank">
-                        <i class="fab fa-pinterest-p fa-2x" style="color: white;"></i>
-                    </a>
-                </div>
+    </div>
+    <div class="footer_middle">
+        <div class="footer_slogan_container">
+        <h4>DONT WORRY<br />BE HOPPY</h4>
+    </div>
+        <div class="footer_media_container">
+            <div class="fb_icon">
+                <a class="fb_link" href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook-f fa-2x" style="color: white;"></i>
+                </a>
+            </div>
+            <div class="twi_icon">
+                <a class="twi_link" href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter fa-2x" style="color: white;"></i>
+                </a>
+            </div>
+            <div class="ig_icon">
+                <a class="ig_link" href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram fa-2x" style="color: white;"></i>
+                </a>
+            </div>
+            <div class="yt_icon">
+                <a class="yt_link" href="https://youtube.com/" target="_blank">
+                    <i class="fab fa-youtube fa-2x" style="color: white;"></i>
+                </a>
+            </div>
+            <div class="pin_icon">
+                <a class="pin_link" href="https://www.pinterest.com/" target="_blank">
+                    <i class="fab fa-pinterest-p fa-2x" style="color: white;"></i>
+                </a>
             </div>
         </div>
     </div>
-    <div class="footer_bac_container">
-        <div class="footer_bac_pic">
-            <img src="./images/footer/bac_transparent.png" />
-        </div>
+</div>
+<div class="footer_bac_container">
+    <div class="footer_bac_pic">
+        <img src="./images/footer/bac_transparent.png" />
     </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav_links')
-        const links = document.querySelectorAll('.nav_links li')
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('on')
-            navLinks.classList.toggle('open')
-            links.forEach(link => {
-                link.classList.toggle('fade')
-            })
-        })
-    </script>
+</div>
+</footer>
 </body>
 </html>

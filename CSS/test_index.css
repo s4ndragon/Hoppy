@@ -3,22 +3,21 @@
     margin: 0;
     padding: 0;
 }
-/* uikit */
+
+body {
+    background-color: #60a41dd5;
+    /* background-image: url(/images/index/Hoptimum-Bottle.png); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* uilit */
 ul {
     padding: 0;
 }
 *+ul {
     padding: 0;
     margin: 0;
-}
-.uk-link, a {
-    color: #fff;
-}
-a:hover {
-    text-decoration: none;
-}
-.uk-slidenav {
-    color: #22201f!important;
 }
 
 @media screen and (min-width: 1200px) {
@@ -494,8 +493,7 @@ a:hover {
         height: 300px;
     }
 }
-
-/* logo & nav */
+/*logo & nav*/
 header {
     position: fixed;
     width: 100%;
@@ -563,291 +561,461 @@ nav {
     position: relative;
 }
 
-/* =========  section 1  ========= */
-@media screen and (min-width: 576px) {
-    .promo_content h2{
-        font-size: 90px;
-        line-height: 90px;
-    }
+
+main {
+    position: relative;
+    top: 90px;
 }
-@media screen and (max-width: 575px) {
-    .promo_content h2{
-        font-size: 62px;
-        line-height: 70px;
-        padding-bottom: 10px;
-    }
-}
+
+/*first*/
 section.promo {
     width: 100%;
+    height: 750px;
+    background-color: transparent;
+}
+section > div.promo_container {
+    /* border: 1px solid white; */
+    width: 100%;
     position: relative;
-    top: 90px;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    background-color: #77b329;
-}
-.promo_pic img {
-    height: calc(100vh - 90px);
-}
-.promo_content {
-    /* border: 1px solid red; */
-    position: absolute;
-    text-align: center;
-}
-.promo_content  h2{
-    color: #fff;
-    font-family: "Baloo Tamma 2", cursive;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-}
-
-/* =========  section 2  ========= */
-section.product {
-    position: relative;
-    top: 90px;
-}
-ul li a{
-    display: flex;
-    justify-content: center;
-}
-.product img {
-    /* border: 1px solid green; */
-    width: 60%;
-    padding-top: 20px;
-}
-li.guava_boat {
-    background-image: url(../images/beers/guava_boat_cover.jpg);
-    background-color: #f8a3a2;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60% ;
-}
-
-/* =========  section 3  ========= */
-@media screen and (min-width: 1200px) {
-    section.onTap {
-        height: 100vh
-    }
-    .onTap_container > div {
-        width: calc((100% / 3) - 40px); 
-
-    }
-}
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    section.onTap {
-        height: 100vh
-    }
-    .onTap_container > div {
-        width: calc((100% / 3) - 40px); 
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .onTap_container > div {
-        width: calc((100% / 2) - 40px); 
-    }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    .onTap_container > div {
-        width: calc((100% / 2) - 40px); 
-    }
-}
-@media screen and (max-width: 575px) {
-    .onTap_container > div {
-        width: calc(100% - 40px); 
-    }
-}
-section.onTap {
-    background-color: #22201f;
-    position: relative;
-    top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
-    /* height: 100vh; */
+    top: 0;
 }
-.onTap_container > div > h2, .onTap_container > div > a > h3, .onTap_container > div > p{
+
+div.promo_pic > a {
+    /* border: 1px solid white; */
+    display: flex;
+    z-index: 1;
+    background-color: transparent;
+    height: 750px;
+}
+
+div.promo_content {
+    display: flex;
+    position: absolute;
+    /* border: 1px solid tomato; */
+    /* top: 150px;
+    left: 370px; */
+    background-color: transparent;
+    z-index: 2;
+}
+
+section > div.promo_container > div.promo_content > h2.animate__fadeInUp {
+    animation-duration: 3s;
+}
+
+div.promo_content > h2 {
     color: #fff;
-    font-family: "Montserrat", sans-serif;
-}
-.onTap_title {
-    width: 95%;
-}
-.onTap_title > h2{
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
     font-size: 90px;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin: 0;
-    color: #fff;
-}
-.onTap_container > div > a > h3 {
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 20px 0 0;
-}
-.onTap_container > div > p {
-    font-size: 18px;
-    margin: 0 0 20px;
-    font-weight: 100;
-}
-.onTap_container {
+    line-height: 75px;
+    letter-spacing: 7px;
+    text-align: center;
+    background-color: transparent;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 95%;
-}
-.onTap_container > div {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.459);
-    margin: 10px;
-}
-
-
-/* =========  section 4  ========= */
-@media screen and (min-width: 992px) {
-    .taproom_content {
-        flex-direction: column;
-        padding: 0 20px;
-    }
-}
-@media screen and (max-width: 991px) {
-    section.taproom {
-        flex-direction: column-reverse;
-    }
-    .taproom_content {
-        flex-direction: column;
-        padding: 20px 0;
-    }
-}
-section.taproom {
     position: relative;
-    top: 200px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    /* border: 1px solid red; */
-    padding: 30px;
-}
-.taproom_content {
-    display: flex;
-    justify-content: center;
-}
-.taproom_content > h2{
-    /* border: 1px solid salmon; */
-    color: #22201f;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 900;
-    padding: 5px;
-    margin: 0;
-}
-.taproom_content > p{
-    /* border: 1px solid salmon; */
-    color: #22201f;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-}
-.taproom_content > a > button {
-    color: #fff;
-    background-color: #60a41d;
-    display: inline-block;
-    width: 200px;
-    height: 40px;
-    cursor: pointer;
+    top: 50px;
+    /* justify-self: center;
+    align-self: center; */
 }
 
-
-/* =========  section 5  ========= */
-@media screen and (min-width: 992px) {
-    section.brewery {
-        flex-direction: row-reverse;
-    }
-    .brewery_content {
-        flex-direction: column;
-        padding: 0 20px;
-    }
-}
-@media screen and (max-width: 991px) {
-    section.brewery {
-        flex-direction: column-reverse;
-    }
-    .brewery_content {
-        flex-direction: column;
-        padding: 20px 0;
-    }
-}
-section.brewery {
-    position: relative;
-    top: 200px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    /* border: 1px solid red; */
-    padding: 30px;
-}
-.brewery_content {
+/*secend products*/
+section.products {
     /* border: 1px solid black; */
     display: flex;
-    /* flex-direction: column; */
+    background: #fff;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    font-size: 0;
     justify-content: center;
-    padding: 20px;
+    align-content: center;
 }
-.brewery_content > h2{
-    /* border: 1px solid salmon; */
-    color: #22201f;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.5rem;
+
+div.product_container {
+    /* border: 1px solid violet; */
+    position: relative;
+    display: flex;
+    /* align-content: center; */
+    width: 85%;
+}
+/*hoptimum*/
+div.product_pic {
+    /* border: 1px solid blue; */
+    background-color: white;
+    display: flex;
+    align-self: center;
+}
+div.product_pic > img {
+    /* height: 650px;
+    width: 650px;
+    position: relative;
+    left: 50px; */
+}
+
+div.product_content {
+    /* border: 1px solid black; */
+    position: relative;
+    /* background-color: white; */
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.product_container > div.product_content > h4 {
+    /* border: 1px solid tomato; */
+    /* background-color: white; */
+    /* display: inline-block; */
+    width: 100%;
+    height: auto;
+    color: #60a41d;
+    font-size: 88px;
+    line-height: 90px;
+    text-align: center;
+    /* vertical-align: center; */
+    position: absolute;
+    font-family: "Baloo Tamma 2", cursive;
     font-weight: 900;
-    padding: 5px;
-    margin: 0;
-
-}
-.brewery_content > p{
-    /* border: 1px solid salmon; */
-    color: #22201f;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    padding: 5px;
-}
-.brewery_content > a > button {
-    color: #fff;
-    background-color: #60a41d;
-    display: inline-block;
-    width: 200px;
-    height: 40px;
-    cursor: pointer;
+    /* top: 120px; */
+    /* left: 150px; */
+    /* height: 583px; */
 }
 
-/* =========  section 6  ========= */
-@media screen and (min-width: 768px) {
-    /* section.about {
-        height: 700px;
-    } */
-    section.about h3 {
-        line-height: 120px;
-        font-size: 120px;
-    }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    section.about h3 {
-        line-height: 100px;
-        font-size: 120px;
-    }
-}
-@media screen and (max-width: 575px) {
-    section.about h3 {
-        line-height: 80px;
-        font-size: 80px;
-    }
-}
-
-section.about {
+/*third - onTap*/
+section.ontap {
+    /* border: 1px solid blue; */
     background-color: #22201f;
     width: 100%;
+    /* display: inline-block; */
     position: relative;
-    top: 200px;
-    height: 700px;
+    height: 750px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+div.ontap_container {
+    /* border: 1px solid rgb(105, 105, 189); */
+    display: flex;
+    background: #22201f;
+    /* font-family: "Baloo Tammudu 2", cursive; */
+    position: relative;
+    width: 85%;
+    height: 85%;
+    top: 100px;
+    bottom: 0;
+    /* justify-content: center; */
+    align-items: flex-end;
+}
+
+div.ontap_title {
+    /* border: 1px solid tomato; */
+    align-self: flex-start;
+    left: 0;
+}
+
+div.ontap_title > h2 {
+    background: #22201f;
+    /* border: 1px solid orange; */
+    color: white;
+    font-size: 78px;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+}
+
+div.ontap_list {
+    /* border: 1px solid red; */
+    /* display: flex; */
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 75%;
+}
+
+div.ontap_names {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+div.ontap_name {
+    /* border: 1px solid white; */
+    /* background-color: #c2602f; */
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    width: 25%;
+    height: 60px;
+}
+
+div.ontap_details {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+div.p1 > a,
+div.p2 > a,
+div.p3 > a,
+div.p4 > a,
+div.p5 > a,
+div.p6 > a,
+div.p7 > a,
+div.p8 > a,
+div.p9 > a {
+    color: #fff;
+}
+
+div.hoptimum {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.people_power {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.dare_to_know {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.hop_bullet {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.imperial_stuout {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.dragonstooth {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.urban_lager {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.space_dust {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.relax {
+    display: flex;
+    position: relative;
+    width: 25%;
+}
+
+div.ontap_style {
+    /* border: 1px solid rgb(197, 111, 30); */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.123); */
+    /* background-color: #c2602f; */
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    height: 80px;
+}
+
+div.ontap_divide {
+    /* border: 1px solid rgb(32, 185, 78); */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.123); */
+    /* background-color: #c2602f; */
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    /* font-style: italic; */
+    height: 90px;
+}
+
+div.ontap_abv {
+    /* border: 1px solid rgb(118, 99, 221); */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.123); */
+    /* background-color: #c2602f; */
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    height: 110px;
+}
+
+/*four - taproom*/
+section.taproom {
+    /* border: 1px solid blue; */
+    background-color: white;
+    width: 100%;
+    /* display: inline-block; */
+    position: relative;
+    height: 650px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+div.taproom_container {
+    /* border: 1px solid red; */
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+div.taproom_content {
+    /* border: 1px solid turquoise; */
+    justify-content: space-between;
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.taproom_content > h4 {
+    /* border: 1px solid red; */
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 48px;
+    height: 30%;
+}
+
+div.taproom_content > p {
+    /* border: 1px solid black; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    height: 60%;
+}
+
+div.taproom_btn {
+    align-self: flex-start;
+    justify-self: end;
+    border: 1px solid #60a41d;
+}
+
+div.taproom_btn > input {
+    border: 0;
+    background-color: #60a41d;
+    color: #ffffff;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+}
+
+div.taproom_pic {
+    /* border: 1px solid rgb(214, 164, 25); */
+    width: 60%;
+    /* height: 100%; */
+}
+
+div.taproom_pic > img {
+    /* border: 1px solid rgb(8, 7, 4); */
+    width: 100%;
+    /* height: auto; */
+}
+
+/*fifth - brewery*/
+section.brewery {
+    /* border: 1px solid blue; */
+    background-color: white;
+    width: 100%;
+    /* display: inline-block; */
+    position: relative;
+    height: 650px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+div.brewery_container {
+    /* border: 1px solid blue; */
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.brewery_content {
+    /* border: 1px solid turquoise; */
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.brewery_content > h4 {
+    /* border: 1px solid orange; */
+    height: 30%;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+div.brewery_content > p {
+    /* border: 1px solid olivedrab; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    height: 60%;
+}
+
+div.brewery_btn {
+    align-self: flex-start;
+    justify-self: end;
+    border: 1px solid #60a41d;
+}
+
+div.brewery_btn > input {
+    border: 0;
+    background-color: #60a41d;
+    color: #ffffff;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+}
+
+div.brewery_pic {
+    /* border: 1px solid rgb(214, 164, 25); */
+    width: 60%;
+    /* padding-left: 25px; */
+    /* justify-self: flex-end; */
+}
+
+div.brewery_pic > img {
+    /* border: 1px solid rgb(16, 68, 71); */
+    width: 100%;
+    /* justify-self: flex-end; */
+}
+
+/*about*/
+section.about {
+    /* border: 1px solid blue; */
+    background-color: #22201f;
+    width: 100%;
+    /* display: inline-block; */
+    position: relative;
+    height: 100vh;
     z-index: 1;
 }
 
@@ -858,50 +1026,57 @@ div.about_container {
     display: block;
     background: url("../images/index/hops.jpg") no-repeat center center;
     background-size: cover;
+    /* position: relative; */
+    /* font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Baloo Tammudu 2", cursive;
+    line-height: 80px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
 }
 div.about_layer {
+    /* border: 1px solid rgb(42, 136, 54); */
     background: rgba(124, 124, 124, 0.7);
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    /* font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Baloo Tammudu 2", cursive;
+    line-height: 80px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
 }
 
 div.about_wrap {
-    /* border: 5px solid tomato; */
-    /* display: inline-block; */
+    /* border: 1px solid tomato; */
+    display: inline-block;
     width: 100%;
     height: auto;
     background: url("../images/index/hops.jpg") no-repeat center center;
     background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 120px;
+    -webkit-text-stroke: 3px #22201f5e;
     text-align: center;
+    line-height: 120px;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    position: absolute;
+    top: 25%;
     left: 0;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    /* top: 150px; */
 }
 
 div.about_wrap > a {
     color: transparent;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
-section.about h3 {
-    /* border: 1px solid black; */
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    -webkit-text-stroke: 3px #22201f5e;
-    color: transparent;
-    background-clip: text;
-    display: flex;
-    align-self: center;
-} 
 
 div.about_plus {
     /* border: 1px solid #22201f; */
@@ -909,6 +1084,8 @@ div.about_plus {
     font-weight: 900;
     font-size: 72px;
     display: flex;
+    /* width: 360px;
+    height: 360px; */
     width: 150px;
     height: 150px;
     justify-content: center;
@@ -918,19 +1095,85 @@ div.about_plus {
     right: 0;
 }
 
+/*shop*/
+section.shop {
+    /* border: 1px solid blue; */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    /* display: inline-block; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+div.shop_container {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    /* border: 1px solid orangered; */
+    display: flex;
+}
+
+div.shop_content {
+    position: relative;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+}
+
+div.shop_content > h4 {
+    /* border: 1px solid yellow; */
+    color: #60a41d;
+    font-size: 170px;
+    line-height: 170px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: "Baloo Tamma 2", cursive;
+    font-weight: 900;
+}
+
+div.shop_pic {
+    position: absolute;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+div.shop_pic > img {
+    /* border: 1px solid purple; */
+    position: relative;
+    width: 25%;
+    height: auto;
+}
+
 /*footer*/
 footer {
     /* border: 1px solid blue; */
     background-color: #22201f;
     width: 100%;
+    /* min-width: 1300px; */
+    /* display: flex; */
     position: relative;
-    top: 200px;
+    /* height: 400px; */
+    /* top: 100px; */
     z-index: 1;
     color: white;
+    top: 90px;
 }
 
 div.footer_openhour_container {
     /* border: 1px solid greenyellow; */
+    /* width: 33%; */
     display: flex;
     flex-direction: column;
 }
@@ -938,6 +1181,7 @@ div.footer_openhour_container {
 div.openhour_title {
     /* border: 1px solid turquoise; */
     width: 100%;
+    /* height: 45%; */
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -953,24 +1197,24 @@ div.openhour_title > h6 {
     margin: 0;
     padding: 0;
 }
+
 div.openhour {
     /* border: 1px solid pink; */
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     align-items: center;
+    /* height: 55%; */
 }
-.openhour_date {
-    width: 60%;
-}
-
 
 div.footer_middle {
     /* border: 1px solid orangered; */
+    /* width: 34%; */
     display: flex;
     flex-direction: column;
+    /* height: 400px; */
 }
 
 div.footer_slogan_container {
@@ -1000,19 +1244,35 @@ div.footer_media_container {
     justify-content: space-evenly;
     width: 100%;
     height: 50%;
+    /* align-items: flex-end; */
+    /* vertical-align: text-bottom; */
     height: auto;
 }
 
-.fa-facebook-f:hover,
-.fa-twitter:hover, 
-.fa-instagram:hover, 
-.fa-youtube:hover,
-.fa-pinterest-p:hover{
-    color: #60a41d!important;
+div.fb_icon,
+div.twi_icon,
+div.ig_icon,
+div.yt_icon,
+div.pin_icon {
+    /* border: 1px solid wheat; */
+    height: auto;
+    width: auto;
+}
+
+div.fb_icon > img,
+div.twi_icon > img,
+div.ig_icon > img,
+div.yt_icon > img,
+div.pin_icon > img {
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
 }
 
 div.footer_bac_container {
     /* border: 1px solid paleturquoise; */
+    /* width: 33%; */
+    /* height: 100%; */
     display: flex;
     align-self: center;
 }
