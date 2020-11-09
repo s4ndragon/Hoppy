@@ -1079,19 +1079,19 @@ svg {
 .quote::before {
     content: '';
     position: absolute;
-    bottom: -75px;
+    bottom: -105px;
     transform: rotate(-10deg);
-    width: 110%;
-    height: 100px;
+    width: 140%;
+    height: 130px;
     background: white;
 }
 .quote::after {
     content: '';
     position: absolute;
-    bottom: -75px;
+    bottom: -105px;
     transform: rotate(10deg);
-    width: 110%;
-    height: 100px;
+    width: 140%;
+    height: 130px;
     background: white;
 }
 .content {
