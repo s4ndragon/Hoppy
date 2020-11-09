@@ -193,8 +193,6 @@ ul {
         height: 300px;
     }
 }
-/* @media screen and (min-width: 576px) and (max-width: 767px) {} */
-/* @media screen and (max-width: 575px) {}*/
 
 /*logo & nav*/
 header {
@@ -267,8 +265,6 @@ nav {
 
 /*main*/
 main {
-    display: flex;
-    justify-content: center;
     position: relative;
     top: 90px;
     width: 100%;

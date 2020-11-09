@@ -587,7 +587,7 @@ section.promo {
     background-color: #77b329;
 }
 .promo_pic img {
-    height: calc(100vh - 90px);
+    /* height: calc(100vh - 90px); */
 }
 .promo_content {
     /* border: 1px solid red; */

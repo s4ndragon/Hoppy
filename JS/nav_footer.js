@@ -19,21 +19,27 @@ $(document).ready(function () {
         document.getElementById("mon_time").style.backgroundColor = "#60a41d";
     } else if (day == 2) {
         document.getElementById("tue").innerHTML = "Today";
+        document.getElementById("tue").style.backgroundColor = "#60a41d";
         document.getElementById("tue_time").style.backgroundColor = "#60a41d";
     } else if (day == 3) {
         document.getElementById("wed").innerHTML = "Today";
+        document.getElementById("wed").style.backgroundColor = "#60a41d";
         document.getElementById("wed_time").style.backgroundColor = "#60a41d";
     } else if (day == 4) {
         document.getElementById("thu").innerHTML = "Today";
+        document.getElementById("thu").style.backgroundColor = "#60a41d";
         document.getElementById("thu_time").style.backgroundColor = "#60a41d";
     } else if (day == 5) {
         document.getElementById("fri").innerHTML = "Today";
+        document.getElementById("fri").style.backgroundColor = "#60a41d";
         document.getElementById("fri_time").style.backgroundColor = "#60a41d";
     } else if (day == 6) {
         document.getElementById("sat").innerHTML = "Today";
+        document.getElementById("sat").style.backgroundColor = "#60a41d";
         document.getElementById("sat_time").style.backgroundColor = "#60a41d";
     } else {
         document.getElementById("sun").innerHTML = "Today";
+        document.getElementById("sun").style.backgroundColor = "#60a41d";
         document.getElementById("sun_time").style.backgroundColor = "#60a41d";
     }
 });
