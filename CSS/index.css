@@ -88,6 +88,9 @@ a:hover {
     div.openhour {
         height: 65%;
     }
+    .openhour_date {
+        width: 60%;
+    }
     div.footer_middle {
         width: 33%;
     }
@@ -219,6 +222,9 @@ a:hover {
     }
     div.openhour {
         height: 55%;
+    }
+    .openhour_date {
+        width: 60%;
     }
     div.footer_middle {
         width: 70%;
@@ -352,6 +358,9 @@ a:hover {
     }
     div.openhour {
         height: 55%;
+    }
+    .openhour_date {
+        width: 60%;
     }
     div.footer_middle {
         width: 70%;
@@ -985,14 +994,16 @@ div.openhour {
     align-content: center;
     align-items: center;
 }
-.openhour > div > div {
+.openhour > div > div,  .openhour_time > div > div{
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 .openhour_date {
-    width: 60%;
+    /* width: 60%; */
 }
-
+.openhour_time {
+    /* width: 30%; */
+}
 
 div.footer_middle {
     /* border: 1px solid orangered; */

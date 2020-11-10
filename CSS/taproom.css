@@ -41,6 +41,9 @@ element.style {
     div.openhour {
         height: 65%;
     }
+    .openhour_date {
+        width: 60%;
+    }
     div.footer_middle {
         width: 33%;
     }
@@ -86,6 +89,9 @@ element.style {
     }
     div.openhour {
         height: 65%;
+    }
+    .openhour_date {
+        width: 60%;
     }
     div.footer_middle {
         width: 33%;
@@ -226,6 +232,9 @@ element.style {
     div.openhour {
         height: 55%;
     }
+    .openhour_date {
+        width: 60%;
+    }
     div.footer_middle {
         width: 70%;
         padding: 70px 10px;
@@ -364,6 +373,9 @@ element.style {
     }
     div.openhour {
         height: 55%;
+    }
+    .openhour_date {
+        width: 60%;
     }
     div.footer_middle {
         width: 70%;
@@ -834,7 +846,7 @@ div.openhour {
     align-items: center;
 }
 .openhour_date {
-    width: 60%;
+    /* width: 60%; */
 }
 
 div.footer_middle {

@@ -41,6 +41,9 @@ ul {
     div.openhour {
         height: 65%;
     }
+    .openhour_date {
+        width: 60%;
+    }
     div.footer_middle {
         width: 33%;
     }
@@ -82,6 +85,9 @@ ul {
     }
     div.openhour {
         height: 65%;
+    }
+    .openhour_date {
+        width: 60%;
     }
     div.footer_middle {
         width: 33%;
@@ -213,6 +219,9 @@ ul {
     }
     div.openhour {
         height: 55%;
+    }
+    .openhour_date {
+        width: 60%;
     }
     div.footer_middle {
         width: 70%;
@@ -350,6 +359,9 @@ ul {
     div.openhour {
         height: 55%;
     }
+    .openhour_date {
+        width: 60%;
+    }
     div.footer_middle {
         width: 70%;
         padding: 70px 10px;
@@ -481,6 +493,7 @@ ul {
         height: 40%;
         padding: 10px;
     }
+    
     div.footer_middle {
         width: 70%;
         padding: 70px 10px;
@@ -801,7 +814,7 @@ div.openhour {
     align-items: center;
 }
 .openhour_date {
-    width: 60%;
+    /* width: 60%; */
 }
 
 div.footer_middle {
