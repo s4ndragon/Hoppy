@@ -12,4 +12,9 @@ $(document).ready(function () {
     } else {
         document.getElementById("openTime_brewery").innerHTML = "CLOSED";
     }
+    var image = document.getElementsByClassName("hoptimum_bottle");
+    // new simpleParallax(image, {
+    //     scale: 1.1,
+    //     delay: 0.3,
+    // });
 });
